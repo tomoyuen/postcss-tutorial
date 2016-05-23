@@ -1,6 +1,6 @@
-@import 'css/variable';
-@import 'css/reset';
-@import 'css/main';
-@import 'css/header';
-@import 'css/sidebar';
-@import 'css/footer';
+@import 'css/variable.css';
+@import 'css/reset.css';
+@import 'css/main.css';
+@import 'css/header.css';
+@import 'css/sidebar.css';
+@import 'css/footer.css';

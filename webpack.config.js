@@ -22,12 +22,12 @@ module.exports = {
 			css: [path.resolve(APP_PATH, 'css/index.css')],
 			template: path.resolve(APP_PATH, 'index.html')
 		}),
-		new ExtractTextPlugin('app/index.css')
+		new Webpack.HotModuleReplacementPlugin()
 	],
 	module: {
 		loaders: [{
 			test: /\.css$/,
-			loader: ExtractTextPlugin.extract(['css?modules&importLoaders=1','postcss']),
+			loader: 'style!css?importLoaders=1&localIdentName=[local]!postcss',
 			include: APP_PATH
 		},{
 			test: /\.(png|jpg)$/,
@@ -42,10 +42,10 @@ module.exports = {
 			}
 		}]
 	},
-	postcss: function () {
+	postcss: function (webpack) {
 		return [
 			postcssImport({
-				addDependencyTo: Webpack
+				addDependencyTo: webpack
 			}),
 			precss,
 			autoprefixer

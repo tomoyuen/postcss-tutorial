@@ -1,0 +1,44 @@
+{
+  "name": "postcss-tutorial",
+  "version": "1.0.0",
+  "description": "postcss demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --inline --hot",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomoyuen/postcss-tutorial.git"
+  },
+  "keywords": [
+    "webpack",
+    "postcss"
+  ],
+  "author": "tomoyuen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomoyuen/postcss-tutorial/issues"
+  },
+  "homepage": "https://github.com/tomoyuen/postcss-tutorial#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "babel-core": "^6.9.0",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "html-webpack-plugin": "^2.17.0",
+    "postcss": "^5.0.21",
+    "postcss-import": "^8.1.2",
+    "postcss-loader": "^0.9.1",
+    "precss": "^1.4.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}

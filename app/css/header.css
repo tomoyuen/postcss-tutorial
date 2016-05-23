@@ -1,0 +1,14 @@
+.header	{
+	background-color: $blue;
+	color: #fff;
+	font-size: 16px;
+}
+
+.header a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.header .nav li {
+	display: inline;
+}

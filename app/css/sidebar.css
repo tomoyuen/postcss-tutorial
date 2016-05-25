@@ -1,3 +1,37 @@
 .sidebar {
+	position: fixed;
+	right: 0;
+	top: 0;
+	height: 100%;
+	box-sizing: border-box;
+	transform: translateX(295px);
+}
+.sidebar a {
+	color: #fff;
+}
+.sidebar-tabs {
+	float: left;
+	width: 1em;
+	height: 100%;
+	padding: 50px 5px;
 	background-color: $sbcolor;
+}
+.sidebar-tabs .tabs-bottom {
+	position: absolute;
+	width: 1em;
+	bottom: 50px;
+}
+
+.sidebar-content {
+	width: 295px;
+	height: 100%;
+	margin-left: 26px;
+	background-color: #e6e6e6;
+}
+.cart-caption {
+	padding: 5px 10px;
+	background-color: #fff;
+}
+.cart-content {
+	padding: 5px 10px;
 }

@@ -1,10 +1,11 @@
 .header	{
+	width: 100%;
 	background-color: $blue;
 	color: #fff;
 	display: table;
 }
 
-.header div {
+.header .container > div {
 	display: table-cell;
 }
 
@@ -12,15 +13,19 @@
 	display: inline-block;
 }
 
-.nav ul {
-	margin: 0;
-}
-
 .header .nav li {
 	display: inline-block;
 	min-width: 6em;
+	zoom: 1;
+	*display: inline;
+	letter-spacing: normal;
+	word-spacing: normal;
 }
-
+.nav ul {
+	margin: 0;
+	letter-spacing: -0.31em;
+	*letter-spacing: normal;
+}
 .nav a {
 	text-decoration: none;
 	color: #fff;
@@ -29,7 +34,9 @@
 	font-size: 14px;
 	padding: 20px 0;
 }
-
 .nav a:hover {
 	background-color: $bluefocus;
+}
+.nav a.active {
+	background-color: $blueactive;
 }

@@ -1,3 +1,21 @@
-.footer {
+.link-block {
+	float: left;
+	width: 15%;
+}
+.link-block ul {
+	padding: 0;
+}
+.link-block a {
+	color: #999;
 	font-size: 12px;
+}
+
+.contact-block {
+	float: left;
+	width: 30%;
+}
+
+.copyright {
+	text-align: center;
+	clear: both;
 }

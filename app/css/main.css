@@ -1,4 +1,200 @@
+a {
+	text-decoration: none;
+	color: #333;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style: none;
+}
+body {
+	background-color: $bgcolor;
+	color: #333;
+	font: 400 14px/1.5 PingFang SC,Lantinghei SC,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
+}
 .container {
-	width: 1024px;
+	overflow: hidden;
+	width: 1180px;
 	margin: 0 auto;
+}
+.clearfix:after {
+	content: "";
+	display: table;
+	height: 0;
+	clear: both;
+}
+.main-content {
+	position: relative;
+	margin-top: 20px;
+	border: 1px solid #e6e6e6;
+	border-bottom: 0;
+	background-color: #fff;
+}
+.main-content:after {
+	content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: #e6e6e6;
+    height: 1px;
+    font-size: 1px;
+}
+
+.block-title h1 {
+	display: inline-block;
+}
+
+.filter-wrapper {
+	border: 1px solid #e6e6e6;
+}
+.filter-block {
+	position: relative;
+	padding: 10px 10px 10px 7em;
+	background-color: #fff;
+}
+.filter-block .filter-label {
+	position: absolute;
+	top: 16px;
+	left: 20px;
+}
+.filter-block .category li,
+.filter-block .sub-category li {
+	display: inline-block;
+	margin: 5px 6px;
+	padding: 0 10px;
+	line-height: 26px;
+	cursor: pointer;
+}
+.filter-block .category li:hover {
+	background-color: #f6f6f6;
+    border-radius: 3px;
+}
+.filter-block .category li.active {
+	line-height: 36px;
+    background-color: #f6f6f6;
+    border-radius: 0;
+    margin: 0;
+    padding: 0 16px;
+    height: 38px;
+}
+.filter-block .sub-category {
+	padding: 6px 0;
+	background-color: #f6f6f6;
+}
+.filter-block .sub-category li.active {
+	color: #fff;
+    background-color: #0089dc;
+    border-radius: 3px;
+}
+
+.extra-filter {
+	background-color: #f5f5f5;
+}
+.extra-sort {
+	float: left;
+	line-height: 40px;
+	margin-left: 10px;
+}
+.extra-sort-item {
+	position: relative;
+	float: left;
+	padding: 0 7px;
+}
+.extra-sort-dropdown {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: -3px;
+	width: 97px;
+	background-color: #fff;
+	line-height: 30px;
+	padding: 40px 3px 4px 14px;
+	border: 1px solid #f5f5f5;
+	border-width: 0 1px 1px;
+	box-shadow: 0 1px 3px rgba(0,0,0,.2);
+	z-index: 6;
+}
+.extra-sort-item:hover > a:first-child {
+	position: relative;
+	z-index: 999;
+}
+.extra-sort-item:hover .extra-sort-dropdown {
+	display: inline-block;
+}
+.extra-sort-dropdown a {
+	display: block;
+	color: #666;
+}
+.extra-option {
+	float: right;
+	margin: 3px 10px 3px 0;
+	line-height: 34px;
+	border-left: 1px #e6e6e6 solid;
+	padding: 0 10px;
+}
+.extra-option input {
+	margin-right: 3px;
+	vertical-align: middle;
+}
+
+.shop-block {
+	display: inline-block;
+	width: 25%;
+	padding: 20px;
+	margin-left: -0.31em;
+	background-color: #fff;
+	border-bottom: 1px solid #f5f5f5;
+	box-sizing: border-box;
+}
+.shop-block:nth-child(4n+1) {
+	margin-left: 0;
+}
+.shop-block:hover {
+	background-color: #f5f5f5;
+}
+.shop-block span {
+	display: block;
+}
+.shop-logo {
+	float: left;
+	margin-right: 20px;
+}
+.shop-logo {
+	font-size: 12px;
+	color: #999;
+	text-align: center;
+}
+.shop-title {
+	font-size: 16px;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.shop-block:hover .shop-title {
+	color: $bluehover;
+}
+.shop-monthsales,
+.shop-cost {
+	font-size: 12px;
+	color: #999;
+}
+.shop-activity i {
+	display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    overflow: hidden;
+    text-align: center;
+    width: 18px;
+    border-radius: 2px;
+    margin-right: 3px;
+    padding: 1px;
+    background-color: #f63;
+    white-space: nowrap;
 }

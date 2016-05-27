@@ -1,6 +1,15 @@
+.footer {
+	margin-top: 50px;
+	border-top: 1px solid #eee;
+}
+.footer .container {
+	padding: 30px 0 10px;
+}
+
 .link-block {
 	float: left;
 	width: 15%;
+	line-height: 2;
 }
 .link-block ul {
 	padding: 0;
@@ -13,9 +22,36 @@
 .contact-block {
 	float: left;
 	width: 30%;
+	padding-left: 3%;
+	color: #666;
+	border-left: 1px solid #e6e6e6;
+	box-sizing: border-box;
+}
+.contact-block p:first-child {
+	margin-top: 0;
+}
+
+.qrcode-block {
+	display: inline-block;
+	width: 25%;
+}
+.qrcode-block img {
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	margin-right: 20px;
+	vertical-align: middle;
+}
+.qrcode-text {
+	display: inline-block;
+	vertical-align: middle;
+}
+.qrcode-block p {
+	font-size: 12px;
 }
 
 .copyright {
+	padding-top: 60px;
 	text-align: center;
 	clear: both;
 }

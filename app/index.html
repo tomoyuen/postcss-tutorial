@@ -7,23 +7,26 @@
 <title>饿了么网上订餐</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
-<link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.css">
 </head>
 <body>
 	<div class="header">
 		<div class="container">
-			<div class="logo"><i class="fa fa-user"></i>饿了么</div>
+			<h1 class="logo"><a href="/"><i class="fa fa-edge"></i> 饿了么</a></h1>
 			<div class="nav">
 				<ul>
-					<li><a href="#" class="active">首页</a></li>
-					<li><a href="#">品牌商家</a></li>
-					<li><a href="#">我的订单</a></li>
-					<li><a href="#">积分商城</a></li>
-					<li><a href="#">服务中心</a></li>
-					<li><a href="#">手机应用</a></li>
+					<li><a class="nav-item" href="#">首页</a></li>
+					<li><a class="nav-item active" href="#">品牌商家</a></li>
+					<li><a class="nav-item" href="#">我的订单</a></li>
 				</ul>
+				<ul>
+					<li><a class="nav-link" href="#"><i class="fa fa-shopping-bag"></i> 积分商城</a></li>
+					<li><a class="nav-link" href="#"><i class="fa fa-headphones"></i> 服务中心</a></li>
+					<li><a class="nav-link" href="#"><i class="fa fa-mobile-phone"></i> 手机应用</a></li>
+				</ul>
+				<div class="user-block">
+					<a href="#"><i class="fa fa-user"></i> 登录/注册</a>
+				</div>
 			</div>
-			<div class="other"></div>
 		</div>
 	</div>
 	<div class="sidebar">
@@ -53,22 +56,21 @@
 	<div class="main">
 		<div class="container">
 			<div class="location-block">
+				<form class="search-form">
+					<input type="text" placeholder="搜索商家，美食...">
+					<button type="submit"><i class="fa fa-search"></i></button>
+				</form>
 				<div class="location">
-					<span>当前位置：</span>
+					<label>当前位置：</label>
 					<span class="location-current">
 						<a href="#">闵行区上海交通大学(闵行校区)内</a>
 					</span>
-					<span class="location-change">
-						<a href="#">[切换地址]</a>
-					</span>
-					<span>> 品牌商家</span>
+					<a class="location-change" href="#">[切换地址] </a>
+					<span class="breadcrumbs"> <i class="fa fa-angle-right"></i> 品牌商家</span>
 				</div>
 			</div>
 			<div class="banner"></div>
-			<div class="block-title">
-				<h1>品牌商家</h1>
-				<span>吃的更安心，服务更贴心</span>
-			</div>
+			<div class="block-title">品牌商家<span class="block-desc">吃的更安心，服务更贴心</span></div>
 			<div class="filter-wrapper">
 				<div class="filter-block">
 					<div class="filter-label">商家分类：</div>
@@ -134,130 +136,22 @@
 			</div>
 			<div class="main-content">
 				<a href="#" class="shop-block">
-				    <div class="shop-logo">
-				    	<img src="http://fuss10.elemecdn.com/a/bd/4f64180f360c969f83cb813847c7ajpeg.jpeg?imageMogr2/thumbnail/70x70/format/webp/quality/85" width="70" height="70" alt="甛印甜品（闵行店）" class="shop-logo-icon">
-				    	<span>45+ 分钟</span>
-				    </div>
-				    <div class="shop-content">
-				        <div class="shop-title">甛印甜品（闵行店）</div>
-				        <div class="starrating icon-star"><span class="icon-star" style="width:70%;"></span></div><span class="shop-monthsales">月售71单</span>
-				        <div class="shop-cost">120元起送 / 配送费10元</div>
-				        <div class="shop-activity">
-				        	<i style="background:#f07373;">减</i>
-				        	<i style="background:#70bc46;">首</i>
-				        	<i style="background:#3cc791;">送</i>
-				        	<i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
-				        	<i style="background:#fff;color:#9071CB;border:1px solid;padding:0;">票</i>
-				        </div>
-				    </div>
-				</a>
-				<a href="#" class="shop-block">
-				    <div class="shop-logo">
-				    	<img src="http://fuss10.elemecdn.com/a/bd/4f64180f360c969f83cb813847c7ajpeg.jpeg?imageMogr2/thumbnail/70x70/format/webp/quality/85" width="70" height="70" alt="甛印甜品（闵行店）" class="shop-logo-icon">
-				    	<span>45+ 分钟</span>
-				    </div>
-				    <div class="shop-content">
-				        <div class="shop-title">甛印甜品（闵行店）</div>
-				        <div class="starrating icon-star"><span class="icon-star" style="width:70%;"></span></div><span class="shop-monthsales">月售71单</span>
-				        <div class="shop-cost">120元起送 / 配送费10元</div>
-				        <div class="shop-activity">
-				        	<i style="background:#f07373;">减</i>
-				        	<i style="background:#70bc46;">首</i>
-				        	<i style="background:#3cc791;">送</i>
-				        	<i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
-				        	<i style="background:#fff;color:#9071CB;border:1px solid;padding:0;">票</i>
-				        </div>
-				    </div>
-				</a>
-				<a href="#" class="shop-block">
-				    <div class="shop-logo">
-				    	<img src="http://fuss10.elemecdn.com/a/bd/4f64180f360c969f83cb813847c7ajpeg.jpeg?imageMogr2/thumbnail/70x70/format/webp/quality/85" width="70" height="70" alt="甛印甜品（闵行店）" class="shop-logo-icon">
-				    	<span>45+ 分钟</span>
-				    </div>
-				    <div class="shop-content">
-				        <div class="shop-title">甛印甜品（闵行店）</div>
-				        <div class="starrating icon-star"><span class="icon-star" style="width:70%;"></span></div><span class="shop-monthsales">月售71单</span>
-				        <div class="shop-cost">120元起送 / 配送费10元</div>
-				        <div class="shop-activity">
-				        	<i style="background:#f07373;">减</i>
-				        	<i style="background:#70bc46;">首</i>
-				        	<i style="background:#3cc791;">送</i>
-				        	<i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
-				        	<i style="background:#fff;color:#9071CB;border:1px solid;padding:0;">票</i>
-				        </div>
-				    </div>
-				</a>
-				<a href="#" class="shop-block">
-				    <div class="shop-logo">
-				    	<img src="http://fuss10.elemecdn.com/a/bd/4f64180f360c969f83cb813847c7ajpeg.jpeg?imageMogr2/thumbnail/70x70/format/webp/quality/85" width="70" height="70" alt="甛印甜品（闵行店）" class="shop-logo-icon">
-				    	<span>45+ 分钟</span>
-				    </div>
-				    <div class="shop-content">
-				        <div class="shop-title">甛印甜品（闵行店）</div>
-				        <div class="starrating icon-star"><span class="icon-star" style="width:70%;"></span></div><span class="shop-monthsales">月售71单</span>
-				        <div class="shop-cost">120元起送 / 配送费10元</div>
-				        <div class="shop-activity">
-				        	<i style="background:#f07373;">减</i>
-				        	<i style="background:#70bc46;">首</i>
-				        	<i style="background:#3cc791;">送</i>
-				        	<i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
-				        	<i style="background:#fff;color:#9071CB;border:1px solid;padding:0;">票</i>
-				        </div>
-				    </div>
-				</a>
-				<a href="#" class="shop-block">
-				    <div class="shop-logo">
-				    	<img src="http://fuss10.elemecdn.com/a/bd/4f64180f360c969f83cb813847c7ajpeg.jpeg?imageMogr2/thumbnail/70x70/format/webp/quality/85" width="70" height="70" alt="甛印甜品（闵行店）" class="shop-logo-icon">
-				    	<span>45+ 分钟</span>
-				    </div>
-				    <div class="shop-content">
-				        <div class="shop-title">甛印甜品（闵行店）</div>
-				        <div class="starrating icon-star"><span class="icon-star" style="width:70%;"></span></div><span class="shop-monthsales">月售71单</span>
-				        <div class="shop-cost">120元起送 / 配送费10元</div>
-				        <div class="shop-activity">
-				        	<i style="background:#f07373;">减</i>
-				        	<i style="background:#70bc46;">首</i>
-				        	<i style="background:#3cc791;">送</i>
-				        	<i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
-				        	<i style="background:#fff;color:#9071CB;border:1px solid;padding:0;">票</i>
-				        </div>
-				    </div>
-				</a>
-				<a href="#" class="shop-block">
-				    <div class="shop-logo">
-				    	<img src="http://fuss10.elemecdn.com/a/bd/4f64180f360c969f83cb813847c7ajpeg.jpeg?imageMogr2/thumbnail/70x70/format/webp/quality/85" width="70" height="70" alt="甛印甜品（闵行店）" class="shop-logo-icon">
-				    	<span>45+ 分钟</span>
-				    </div>
-				    <div class="shop-content">
-				        <div class="shop-title">甛印甜品（闵行店）</div>
-				        <div class="starrating icon-star"><span class="icon-star" style="width:70%;"></span></div><span class="shop-monthsales">月售71单</span>
-				        <div class="shop-cost">120元起送 / 配送费10元</div>
-				        <div class="shop-activity">
-				        	<i style="background:#f07373;">减</i>
-				        	<i style="background:#70bc46;">首</i>
-				        	<i style="background:#3cc791;">送</i>
-				        	<i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
-				        	<i style="background:#fff;color:#9071CB;border:1px solid;padding:0;">票</i>
-				        </div>
-				    </div>
-				</a>
-				<a href="#" class="shop-block">
-				    <div class="shop-logo">
-				    	<img src="http://fuss10.elemecdn.com/a/bd/4f64180f360c969f83cb813847c7ajpeg.jpeg?imageMogr2/thumbnail/70x70/format/webp/quality/85" width="70" height="70" alt="甛印甜品（闵行店）" class="shop-logo-icon">
-				    	<span>45+ 分钟</span>
-				    </div>
-				    <div class="shop-content">
-				        <div class="shop-title">甛印甜品（闵行店）</div>
-				        <div class="starrating icon-star"><span class="icon-star" style="width:70%;"></span></div><span class="shop-monthsales">月售71单</span>
-				        <div class="shop-cost">120元起送 / 配送费10元</div>
-				        <div class="shop-activity">
-				        	<i style="background:#f07373;">减</i>
-				        	<i style="background:#70bc46;">首</i>
-				        	<i style="background:#3cc791;">送</i>
-				        	<i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
-				        	<i style="background:#fff;color:#9071CB;border:1px solid;padding:0;">票</i>
-				        </div>
-				    </div>
+					<div class="shop-logo">
+						<img src="http://fuss10.elemecdn.com/a/bd/4f64180f360c969f83cb813847c7ajpeg.jpeg?imageMogr2/thumbnail/70x70/format/webp/quality/85" width="70" height="70" alt="甛印甜品（闵行店）" class="shop-logo-icon">
+						<span>45+ 分钟</span>
+					</div>
+					<div class="shop-content">
+						<div class="shop-title">甛印甜品（闵行店）</div>
+						<div class="starrating icon-star"><span class="icon-star" style="width:70%;"></span></div><span class="shop-monthsales">月售71单</span>
+						<div class="shop-cost">120元起送 / 配送费10元</div>
+						<div class="shop-activity">
+							<i style="background:#f07373;">减</i>
+							<i style="background:#70bc46;">首</i>
+							<i style="background:#3cc791;">送</i>
+							<i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
+							<i style="background:#fff;color:#9071CB;border:1px solid;padding:0;">票</i>
+						</div>
+					</div>
 				</a>
 			</div>
 		</div>
@@ -297,9 +191,11 @@
 				<p>关注我们: <a href="#">微信</a><a href="#">微博</a><a href="#">人人</a></p>
 			</div>
 			<div class="qrcode-block">
-				<img src="" alt="">
-				<h1>下载手机版</h1>
-				<p>扫一扫，手机订餐更方便</p>
+				<img src="https://static11.elemecdn.com/eleme/desktop/media/img/appqc.852963.png" alt="">
+				<div class="qrcode-text">
+					<b>下载手机版</b>
+					<p>扫一扫，手机订餐更方便</p>
+				</div>
 			</div>
 			<div class="copyright">
 				<small>增值电信业务许可证 : <a href="#">沪B2-20150033</a> | <a href="#">沪ICP备 09007032</a> | 上海工商行政管理 Copyright ©2008-2015 ele.me, All Rights Reserved.</small>

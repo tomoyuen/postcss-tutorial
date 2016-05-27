@@ -11,7 +11,7 @@ var ROOT_PATH = path.resolve(__dirname),
 	BUILD_PATH = path.resolve(ROOT_PATH, 'build');
 
 module.exports = {
-	entry: APP_PATH,
+	entry: ['webpack/hot/dev-server', APP_PATH],
 	output: {
 		path: BUILD_PATH,
 		filename: '[name].js'
@@ -20,7 +20,14 @@ module.exports = {
 		new HtmlwebpackPlugin({
 			title: 'Hello world',
 			css: [path.resolve(APP_PATH, 'css/index.css')],
-			template: path.resolve(APP_PATH, 'index.html')
+			template: path.resolve(APP_PATH, 'index.html'),
+			minify: {
+				collapseWhitespace: true,
+				removeComments: true,
+				removeRedundantAttributes: true,
+				removeScriptTypeAttributes: true,
+				removeStyleLinkTypeAttributes: true
+			}
 		}),
 		new Webpack.HotModuleReplacementPlugin()
 	],
@@ -30,7 +37,7 @@ module.exports = {
 			loader: 'style!css?importLoaders=1&localIdentName=[local]!postcss',
 			include: APP_PATH
 		},{
-			test: /\.(png|jpg)$/,
+			test: /\.(png|jpg|jpeg|gif)$/,
 			loader: 'url-loader?limit=2048'
 		},{
 			test: /\.js$/,
@@ -40,6 +47,13 @@ module.exports = {
 				presets: ['es2015'],
 				plugins: ['transform-runtime']
 			}
+		},{
+			test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+			loader: "url?limit=10000&minetype=application/font-woff"
+		},
+		{
+			test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+			loader: "file"
 		}]
 	},
 	postcss: function (webpack) {
@@ -52,8 +66,9 @@ module.exports = {
 		]
 	},
 	devServer: {
-		historyApiFallback: true,
-		hot: true,
+		contentBase: './build',
+		historyApiFallback: false,
+		hot: false,
 		inline: true,
 		progress: true,
 		port: 3000

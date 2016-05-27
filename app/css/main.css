@@ -14,6 +14,12 @@ body {
 	color: #333;
 	font: 400 14px/1.5 PingFang SC,Lantinghei SC,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
 }
+h1,h2,h3 {
+	margin: 0;
+}
+input {
+	padding: 0 8px;
+}
 .container {
 	overflow: hidden;
 	width: 1180px;
@@ -34,17 +40,82 @@ body {
 }
 .main-content:after {
 	content: "";
-    position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    background: #e6e6e6;
-    height: 1px;
-    font-size: 1px;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	background: #e6e6e6;
+	height: 1px;
+	font-size: 1px;
 }
 
-.block-title h1 {
+.block-title {
+	font-size: 20px;
+}
+.block-desc {
+	font-size: 14px;
+	color: #999;
+	margin-left: 15px;
+}
+
+.location-block {
+	position: relative;
+	overflow: hidden;
+}
+.location-block .search-form {
+	float: right;
+	margin: 10px 0;
+	height: 32px;
+	border: 1px solid #ccc;
+	background: #fff;
+	position: relative;
+	z-index: 3;
+}
+.location-block .location {
+	float: left;
+	line-height: 54px;
+	font-size: 12px;
+}
+.location label {
+	color: #999;
+}
+.location-current {
 	display: inline-block;
+	max-width: 138px;
+	line-height: 1;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.location-change {
+	color: $blue;
+}
+.breadcrumbs .fa {
+	font-size: 18px;
+	margin: 0 6px;
+}
+
+.search-form input {
+	width: 236px;
+	margin: 4px 0;
+	border: none;
+	line-height: 24px;
+	transition: width .3s ease-in-out;
+}
+.search-form input:focus {
+	width: 306px;
+	outline: none;
+}
+.search-form button {
+	appearance: none;
+	border: none;
+	color: #999;
+	font-size: 18px;
+	background: none;
+	line-height: 24px;
+}
+.search-form button:hover {
+	color: $blue;
 }
 
 .filter-wrapper {
@@ -74,11 +145,11 @@ body {
 }
 .filter-block .category li.active {
 	line-height: 36px;
-    background-color: #f6f6f6;
-    border-radius: 0;
-    margin: 0;
-    padding: 0 16px;
-    height: 38px;
+	background-color: #f6f6f6;
+	border-radius: 0;
+	margin: 0;
+	padding: 0 16px;
+	height: 38px;
 }
 .filter-block .sub-category {
 	padding: 6px 0;
@@ -86,8 +157,8 @@ body {
 }
 .filter-block .sub-category li.active {
 	color: #fff;
-    background-color: #0089dc;
-    border-radius: 3px;
+	background-color: #0089dc;
+	border-radius: 3px;
 }
 
 .extra-filter {
@@ -139,6 +210,9 @@ body {
 	margin-right: 3px;
 	vertical-align: middle;
 }
+.extra-option .extra-option-item + .extra-option-item {
+	margin-left: 10px;
+}
 
 .shop-block {
 	display: inline-block;
@@ -168,10 +242,11 @@ body {
 	text-align: center;
 }
 .shop-title {
+	overflow: hidden;
+	margin-bottom: 6px;
 	font-size: 16px;
 	font-weight: bold;
 	white-space: nowrap;
-	overflow: hidden;
 	text-overflow: ellipsis;
 }
 .shop-block:hover .shop-title {
@@ -182,19 +257,22 @@ body {
 	font-size: 12px;
 	color: #999;
 }
+.shop-activity {
+	margin-top: 6px;
+}
 .shop-activity i {
 	display: inline-block;
-    vertical-align: middle;
-    color: #fff;
-    font-style: normal;
-    font-size: 12px;
-    line-height: 16px;
-    overflow: hidden;
-    text-align: center;
-    width: 18px;
-    border-radius: 2px;
-    margin-right: 3px;
-    padding: 1px;
-    background-color: #f63;
-    white-space: nowrap;
+	vertical-align: middle;
+	color: #fff;
+	font-style: normal;
+	font-size: 12px;
+	line-height: 16px;
+	overflow: hidden;
+	text-align: center;
+	width: 18px;
+	border-radius: 2px;
+	margin-right: 3px;
+	padding: 1px;
+	background-color: #f63;
+	white-space: nowrap;
 }

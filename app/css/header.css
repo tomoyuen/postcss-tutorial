@@ -5,10 +5,9 @@
 	background-color: $blue;
 	line-height: 60px;
 }
-.header a {
-	color: #fff;
+.header .fa {
+	margin-right: 6px;
 }
-
 .logo a {
 	display: block;
 	width: 105px;

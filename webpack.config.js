@@ -22,6 +22,7 @@ module.exports = {
 			css: [path.resolve(APP_PATH, 'css/index.css')],
 			template: path.resolve(APP_PATH, 'index.html'),
 			minify: {
+				collapseInlineTagWhitespace: true,
 				collapseWhitespace: true,
 				removeComments: true,
 				removeRedundantAttributes: true,

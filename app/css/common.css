@@ -1,0 +1,79 @@
+a {
+	text-decoration: none;
+	outline: none;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style: none;
+}
+body {
+	background-color: $bgcolor;
+	color: #333;
+	font: 400 14px/1.5 PingFang SC,Lantinghei SC,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
+}
+h1,h2,h3 {
+	margin: 0;
+}
+input {
+	padding: 0 8px;
+}
+.pull-right {
+	float: right;
+}
+.pull-left {
+	float: left;
+}
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+.clearfix:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+}
+.nowrap {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.multi-nowrap {
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	box-orient: vertical;
+	-webkit-line-clamp: 2;
+}
+.elemeicon {
+	background: url(//static11.elemecdn.com/eleme/desktop/media/img/icon.d5d696.png) no-repeat;
+}
+.dropbox {
+	color: #999;
+	position: absolute;
+	background: #fff;
+	background: rgba(255,255,255,.98);
+	padding: 4px 6px;
+	box-shadow: 0 1px 2px rgba(0,0,0,.5);
+	border: 1px solid #ddd\9;
+	border-width: 0 1px 1px\9;
+	z-index: 6;
+}
+.dropbox:before {
+	content: ' ';
+	position: absolute;
+	display: block;
+	top: -10px;
+	border: 5px solid;
+}
+.fa {
+	margin-right: 6px;
+}
+.divider {
+	margin: 0;
+	border: #eee solid;
+	border-width: 1px 0 0;
+}

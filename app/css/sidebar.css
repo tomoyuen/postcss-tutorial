@@ -3,24 +3,50 @@
 	right: 0;
 	top: 0;
 	height: 100%;
-	line-height: 1;
 	transform: translateX(295px);
+	z-index: 999;
 }
 .sidebar a {
-	color: #fff;
+	display: inline-block;
+	width: 35px;
+	margin: 5px 0;
+	color: #ccc;
+	box-sizing: border-box;
+}
+.sidebar a .fa {
+	font-size: 20px;
 }
 .sidebar-tabs {
 	float: left;
-	width: 25px;
+	width: 35px;
 	height: 100%;
-	padding: 50px 5px;
+	padding: 50px 0px;
 	text-align: center;
 	background-color: $sbcolor;
 }
+.sidebar-tabs .tabs-top {
+	position: absolute;
+	width: inherit;
+	top: 50%;
+	margin-top: -220px;
+}
 .sidebar-tabs .tabs-bottom {
 	position: absolute;
-	width: 1em;
+	width: inherit;
 	bottom: 50px;
+}
+.sidebar-btn {
+	line-height: 35px;
+}
+.sidebar-cartbtn {
+	padding: 7px 8px 10px;
+	margin: 8px 0;
+	line-height: 16px;
+}
+.tabs-top hr {
+	border-top: 1px solid #737074;
+	height: 0;
+	margin: 0 8px;
 }
 
 .sidebar-content {
@@ -35,4 +61,5 @@
 }
 .cart-content {
 	padding: 5px 10px;
+	color: #ccc;
 }

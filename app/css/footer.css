@@ -21,19 +21,66 @@
 
 .contact-block {
 	float: left;
-	width: 30%;
+	width: 23%;
 	padding-left: 3%;
+	padding-right: 10px;
 	color: #666;
 	border-left: 1px solid #e6e6e6;
-	box-sizing: border-box;
 }
-.contact-block p:first-child {
-	margin-top: 0;
+.contact-block .contact-item {
+	margin-bottom: 12px;
+	color: #666;
+	font-size: 14px;
+}
+.contact-block .icon-wechat {
+	margin-left: 5px;
+}
+.contact-block .icon-wechat .dropbox {
+	display: none;
+}
+.footer-contact-dropbox {
+	bottom: 30px;
+	left: -60px;
+	text-align: center;
+}
+.dropbox.dropbox-bottom:before {
+	top: auto;
+	bottom: -10px;
+	left: 65px;
+	border-color: #fff transparent transparent;
+	z-index: 2;
+}
+.footer-contact-dropbox img {
+	width: 130px;
+	height: 130px;
+}
+.contact-block [class^=icon-] {
+	cursor: pointer;
+	position: relative;
+	margin-left: 10px;
+	display: inline-block;
+}
+.contact-block [class^=icon-]:before {
+	font-size: 24px;
+	color: #ccc;
+	vertical-align: middle;
+}
+.contact-block .icon-wechat:hover .dropbox {
+	display: block;
+}
+.contact-block .icon-wechat:hover:before {
+	color: #77d175;
+}
+.contact-block .icon-weibo:hover:before {
+	color: #fb545f;
+}
+.contact-block .icon-renren:hover:before {
+	color: #47a9f7;
 }
 
 .qrcode-block {
 	display: inline-block;
-	width: 25%;
+	width: 265px;
 }
 .qrcode-block img {
 	display: inline-block;

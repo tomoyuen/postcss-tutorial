@@ -172,6 +172,16 @@
 	padding: 0 16px;
 	height: 38px;
 }
+.filter-block .category li.no-sub.active {
+	margin: 5px 6px;
+	padding: 0 10px;
+	line-height: 26px;
+	height: auto;
+	color: #fff;
+	background-color: #0089dc;
+	border-radius: 3px;
+	cursor: pointer;
+}
 .filter-block .sub-category {
 	padding: 6px 0;
 	background-color: #f6f6f6;
@@ -198,8 +208,13 @@
 .extra-sort-item.active {
 	color: $linkcolor;
 }
-.extra-sort-item > a .fa {
+.extra-sort-item .icon-arrow-down,
+.extra-sort-item .icon-arrow-up {
 	margin-left: 6px;
+	vertical-align: middle;
+}
+.extra-sort-item .icon-arrow-up {
+	display: none;
 }
 .extra-sort-dropdown {
 	display: none;
@@ -223,8 +238,11 @@
 	position: relative;
 	z-index: 999;
 }
-.extra-sort-item:hover > a .fa {
-	transform: rotate(180deg);
+.extra-sort-item:hover .icon-arrow-down {
+	display: none;
+}
+.extra-sort-item:hover .icon-arrow-up {
+	display: inline-block;
 }
 .extra-sort-item:hover .extra-sort-dropdown {
 	display: block;
@@ -329,8 +347,9 @@
 	color: #ffc30c;
 	white-space: nowrap;
 }
-.icon-star:before {
-	content:"\f005\f005\f005\f005\f005"
+.shop-star span:before,
+.shop-star:before {
+	content: "\e950\e950\e950\e950\e950";
 }
 .shop-monthsales,
 .shop-cost {

@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack watch && webpack-dev-server",
+    "start": "webpack && webpack-dev-server",
     "dev": "webpack-dev-server",
-    "build": "webpack --watch"
+    "build": "webpack --progress --colors --watch"
   },
   "repository": {
     "type": "git",
@@ -43,8 +43,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
-    "font-awesome": "^4.6.3",
-    "font-awesome-webpack": "0.0.4",
+    "jquery": "^2.2.4",
     "normalize-css": "^2.3.1"
   }
 }

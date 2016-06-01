@@ -91,3 +91,9 @@ window.showTooltip = function () {
 window.hideTooltip = function () {
 	$('.sidebar .tooltip').hide();
 }
+
+window.backtop = function () {
+	$('body').animate({
+		scrollTop: 0
+	}, 300);
+}

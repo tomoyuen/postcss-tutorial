@@ -19,15 +19,19 @@ $(function() {
 	});
 });
 
-window.openSidebar = function () {
-	$(this).addClass('active');
-	$('.sidebar').animate({
-		right: '295px'
-	}, 300);
+window.toggleSidebar = function () {
+	if ($(this).hasClass('active')) {
+		closeSidebar();
+	} else {
+		$(this).addClass('active');
+		$('.sidebar').animate({
+			right: '295px'
+		}, 300);
+	};
 }
 
 window.closeSidebar = function () {
-	$('.sidebarbd-cartbtn').removeClass('active');
+	$('.sidebar .sidebar-cartbtn').removeClass('active');
 	$('.sidebar').animate({
 		right: '0'
 	}, 300);
@@ -61,4 +65,29 @@ window.showDetail = function () {
 
 window.hideDetail = function () {
 	$('.detailpop').hide();
+}
+
+window.showTooltip = function () {
+	var that = $(this),
+		top = this.offsetTop + 3,
+		point = that.closest('div').find('.tooltip');
+
+	point.removeClass('tooltip-placeleft');
+
+	if (that.attr('tooltip-placement') == 'left') {
+		point.addClass('tooltip-placeleft')
+	}
+
+	point.find('.tooltip-content').text(that.attr('tooltip'));
+
+	point.css({
+		left: '-82px',
+		top: top + 'px'
+	});
+
+	point.show();
+}
+
+window.hideTooltip = function () {
+	$('.sidebar .tooltip').hide();
 }

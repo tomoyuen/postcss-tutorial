@@ -53,12 +53,16 @@
 	<div class="sidebar">
 		<div class="sidebar-tabs">
 			<div class="tabs-top">
-				<a class="sidebar-btn icon-order" tooltip="我的订单" tooltip-placement="left"></a>
+				<a class="sidebar-btn icon-order" onmousemove="showTooltip.call(this)" onmouseout="hideTooltip()" tooltip="我的订单" tooltip-placement="left"></a>
 				<hr class="divider">
-				<a class="sidebar-btn sidebar-cartbtn icon-cart" href="JavaScript:;" onclick="openSidebar()">购物车</a>
+				<a class="sidebar-btn sidebar-cartbtn icon-cart" href="JavaScript:;" onclick="toggleSidebar.call(this)">购物车</a>
 				<hr class="divider">
-				<a class="sidebar-btn icon-notice" href="JavaScript:;" tooltip="我的信息" tooltip-placement="left"></a>
-				<a class="sidebar-btn icon-history" href="JavaScript:" tooltip="浏览历史" title="浏览历史" tooltip-placement="left"></a>
+				<a class="sidebar-btn icon-notice" onmousemove="showTooltip.call(this)" onmouseout="hideTooltip()" href="JavaScript:;" tooltip="我的信息" tooltip-placement="left"></a>
+				<a class="sidebar-btn icon-history" onmousemove="showTooltip.call(this)" onmouseout="hideTooltip()" href="JavaScript:" tooltip="浏览历史" title="浏览历史" tooltip-placement="left"></a>
+				<div class="tooltip">
+					<div class="tooltip-arrow"></div>
+					<div class="tooltip-content"></div>
+				</div>
 			</div>
 			<div class="tabs-bottom">
 				<div class="sidebar-btn icon-QR-code">
@@ -70,8 +74,12 @@
 						</a>
 					</div>
 				</div>
-				<a class="sidebar-btn icon-service" tooltip="在线客服" title="在线客服" tooltip-placement="left" href="JavaScript:"></a>
-				<a class="sidebar-btn sidebar-btn-backtop icon-top" tooltip="回到顶部" title="回到顶部" href="JavaScript:" tooltip-placement="left" style="visibility: hidden;"></a>
+				<a class="sidebar-btn icon-service" onmousemove="showTooltip.call(this)" onmouseout="hideTooltip()" tooltip="在线客服" title="在线客服" tooltip-placement="left" href="JavaScript:"></a>
+				<a class="sidebar-btn sidebar-btn-backtop icon-top" onmousemove="showTooltip.call(this)" onmouseout="hideTooltip()" tooltip="回到顶部" title="回到顶部" href="JavaScript:" tooltip-placement="left" style="visibility: hidden;"></a>
+				<div class="tooltip">
+					<div class="tooltip-arrow"></div>
+					<div class="tooltip-content"></div>
+				</div>
 			</div>
 		</div>
 		<div class="sidebar-body">

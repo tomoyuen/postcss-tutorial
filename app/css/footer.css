@@ -32,10 +32,13 @@
 	color: #666;
 	font-size: 14px;
 }
-.contact-block .icon-wechat {
+.contact-item label {
+	display: inline-block;
+}
+.contact-item .icon-wechat {
 	margin-left: 5px;
 }
-.contact-block .icon-wechat .dropbox {
+.contact-item .icon-wechat .dropbox {
 	display: none;
 }
 .footer-contact-dropbox {
@@ -54,27 +57,27 @@
 	width: 130px;
 	height: 130px;
 }
-.contact-block [class^=icon-] {
+.contact-item [class^=icon-] {
 	cursor: pointer;
 	position: relative;
 	margin-left: 10px;
 	display: inline-block;
 }
-.contact-block [class^=icon-]:before {
+.contact-item [class^=icon-]:before {
 	font-size: 24px;
 	color: #ccc;
 	vertical-align: middle;
 }
-.contact-block .icon-wechat:hover .dropbox {
+.contact-item .icon-wechat:hover .dropbox {
 	display: block;
 }
-.contact-block .icon-wechat:hover:before {
+.contact-item .icon-wechat:hover:before {
 	color: #77d175;
 }
-.contact-block .icon-weibo:hover:before {
+.contact-item .icon-weibo:hover:before {
 	color: #fb545f;
 }
-.contact-block .icon-renren:hover:before {
+.contact-item .icon-renren:hover:before {
 	color: #47a9f7;
 }
 

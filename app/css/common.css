@@ -351,9 +351,15 @@
 	content: "\e96d"
 }
 
+*, :after, :before {
+	box-sizing: border-box;
+}
 a {
 	color: #333;
 	text-decoration: none;
+	outline: none;
+}
+a:focus {
 	outline: none;
 }
 p {

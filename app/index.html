@@ -55,7 +55,7 @@
 			<div class="tabs-top">
 				<a class="sidebar-btn icon-order" tooltip="我的订单" tooltip-placement="left"></a>
 				<hr class="divider">
-				<a class="sidebar-btn sidebar-cartbtn icon-cart" href="JavaScript:;">购物车</a>
+				<a class="sidebar-btn sidebar-cartbtn icon-cart" href="JavaScript:;" onclick="openSidebar()">购物车</a>
 				<hr class="divider">
 				<a class="sidebar-btn icon-notice" href="JavaScript:;" tooltip="我的信息" tooltip-placement="left"></a>
 				<a class="sidebar-btn icon-history" href="JavaScript:" tooltip="浏览历史" title="浏览历史" tooltip-placement="left"></a>
@@ -63,7 +63,7 @@
 			<div class="tabs-bottom">
 				<div class="sidebar-btn icon-QR-code">
 					<div class="dropbox sidebar-tabs-dropbox">
-						<a href="http://static11.elemecdn.com/eleme/desktop/mobile/index.html" target="_blank">
+						<a href="//static11.elemecdn.com/eleme/desktop/mobile/index.html" target="_blank">
 							<img src="//static11.elemecdn.com/eleme/desktop/media/img/appqc.852963.png" alt="下载手机应用" />
 							<p>下载手机应用</p>
 							<p class="icon-QR-code-bonus">即可参加分享红包活动</p>
@@ -77,7 +77,7 @@
 		<div class="sidebar-body">
 			<div class="sidebarbd-caption">
 				<a href="#">购物车</a>
-				<span class="icon-angle-double-right pull-right"></span>
+				<span class="icon-angle-double-right pull-right" onclick="closeSidebar()"></span>
 			</div>
 			<div class="sidebarbd-content">
 				<div class="sidebarbd-notice">
@@ -183,77 +183,111 @@
 				<span>想吃好点的，看看附近 <var>12 家</var> 品牌商家吧，<a href="#">立即查看</a></span>
 			</div>
 			<div class="main-content">
-				<a href="#" class="shop-block">
-					<div class="shop-logo pull-left">
-						<img src="http://fuss10.elemecdn.com/a/bd/4f64180f360c969f83cb813847c7ajpeg.jpeg?imageMogr2/thumbnail/70x70/format/webp/quality/85" width="70" height="70" alt="甛印甜品（闵行店）" class="shop-logo-icon">
-						<div>45+ 分钟</div>
-					</div>
-					<div class="shop-content">
-						<div class="shop-title nowrap">甛印甜品（闵行店）</div>
-						<div class="shop-star icon-star"><span class="icon-star" style="width:86%;"></span></div><span class="shop-monthsales">月售71单</span>
-						<div class="shop-cost">120元起送 / 配送费10元</div>
-						<div class="shop-activity">
-							<i style="background:#f07373;">减</i>
-							<i style="background:#70bc46;">首</i>
-							<i style="background:#3cc791;">送</i>
-							<i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
-							<i style="background:#fff;color:#9071CB;border:1px solid;padding:0;">票</i>
+				<div class="clearfix">
+					<a href="#" class="shop-item pull-left" onmouseover="showDetail.call(this)" onmouseout="hideDetail()">
+						<div class="shop-logo pull-left">
+							<img src="//fuss10.elemecdn.com/a/bd/4f64180f360c969f83cb813847c7ajpeg.jpeg?imageMogr2/thumbnail/70x70/format/webp/quality/85" width="70" height="70" alt="甛印甜品（闵行店）" class="shop-logo-icon">
+							<div>45+ 分钟</div>
+							<i class="elemeicon brand-badge"></i>
 						</div>
-					</div>
-				</a>
-				<a href="#" class="shop-block">
-					<div class="shop-logo pull-left">
-						<img src="http://fuss10.elemecdn.com/a/bd/4f64180f360c969f83cb813847c7ajpeg.jpeg?imageMogr2/thumbnail/70x70/format/webp/quality/85" width="70" height="70" alt="甛印甜品（闵行店）" class="shop-logo-icon">
-						<div>45+ 分钟</div>
-					</div>
-					<div class="shop-content">
-						<div class="shop-title nowrap">甛印甜品（闵行店）</div>
-						<div class="shop-star icon-star"><span class="icon-star" style="width:86%;"></span></div><span class="shop-monthsales">月售71单</span>
-						<div class="shop-cost">120元起送 / 配送费10元</div>
-						<div class="shop-activity">
-							<i style="background:#f07373;">减</i>
-							<i style="background:#70bc46;">首</i>
-							<i style="background:#3cc791;">送</i>
-							<i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
-							<i style="background:#fff;color:#9071CB;border:1px solid;padding:0;">票</i>
+						<div class="shop-content">
+							<div class="shop-title nowrap">甛印甜品（闵行店）</div>
+							<div class="shop-star icon-star"><span class="icon-star" style="width:86%;"></span></div><span class="shop-monthsales">月售71单</span>
+							<div class="shop-cost">120元起送 / 配送费10元</div>
+							<div class="shop-activity">
+								<i style="background:#f07373;">减</i>
+								<i style="background:#70bc46;">首</i>
+								<i style="background:#3cc791;">送</i>
+								<i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
+								<i style="background:#fff;color:#9071CB;border:1px solid;padding:0;">票</i>
+							</div>
 						</div>
+					</a>
+					<a href="#" class="shop-item pull-left" onmouseover="showDetail.call(this)" onmouseout="hideDetail()">
+						<div class="shop-logo pull-left">
+							<img src="//fuss10.elemecdn.com/a/bd/4f64180f360c969f83cb813847c7ajpeg.jpeg?imageMogr2/thumbnail/70x70/format/webp/quality/85" width="70" height="70" alt="甛印甜品（闵行店）" class="shop-logo-icon">
+							<div>45+ 分钟</div>
+						</div>
+						<div class="shop-content">
+							<div class="shop-title nowrap">甛印甜品（闵行店）</div>
+							<div class="shop-star icon-star"><span class="icon-star" style="width:86%;"></span></div><span class="shop-monthsales">月售71单</span>
+							<div class="shop-cost">120元起送 / 配送费10元</div>
+							<div class="shop-activity">
+								<i style="background:#f07373;">减</i>
+								<i style="background:#70bc46;">首</i>
+								<i style="background:#3cc791;">送</i>
+								<i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
+								<i style="background:#fff;color:#9071CB;border:1px solid;padding:0;">票</i>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="shop-item pull-left" onmouseover="showDetail.call(this)" onmouseout="hideDetail()">
+						<div class="shop-logo pull-left">
+							<img src="//fuss10.elemecdn.com/a/bd/4f64180f360c969f83cb813847c7ajpeg.jpeg?imageMogr2/thumbnail/70x70/format/webp/quality/85" width="70" height="70" alt="甛印甜品（闵行店）" class="shop-logo-icon">
+							<div>45+ 分钟</div>
+						</div>
+						<div class="shop-content">
+							<div class="shop-title nowrap">甛印甜品（闵行店）</div>
+							<div class="shop-star icon-star"><span class="icon-star" style="width:86%;"></span></div><span class="shop-monthsales">月售71单</span>
+							<div class="shop-cost">120元起送 / 配送费10元</div>
+							<div class="shop-activity">
+								<i style="background:#f07373;">减</i>
+								<i style="background:#70bc46;">首</i>
+								<i style="background:#3cc791;">送</i>
+								<i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
+								<i style="background:#fff;color:#9071CB;border:1px solid;padding:0;">票</i>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="shop-item shop-disabled pull-left" onmouseover="showDetail.call(this)" onmouseout="hideDetail()">
+						<div class="shop-logo pull-left">
+							<img src="//fuss10.elemecdn.com/a/bd/4f64180f360c969f83cb813847c7ajpeg.jpeg?imageMogr2/thumbnail/70x70/format/webp/quality/85" width="70" height="70" alt="甛印甜品（闵行店）" class="shop-logo-icon">
+							<div>45+ 分钟</div>
+							<i class="elemeicon brand-badge"></i>
+						</div>
+						<div class="shop-content">
+							<div class="shop-title nowrap">甛印甜品（闵行店）</div>
+							<div class="shop-star icon-star"><span class="icon-star" style="width:86%;"></span></div><span class="shop-monthsales">月售71单</span>
+							<div class="shop-cost">120元起送 / 配送费10元</div>
+							<div class="shop-relaxing">商家休息,暂不接单</div>
+						</div>
+					</a>
+					<div class="detailpop">
+						<div class="detailpop-arrow"></div>
+						<div class="detailpop-title">川娃子刘氏龙虾</div>
+						<div class="detailpop-flavors"></div>
+						<ul class="detailpop-activities">
+							<li>
+								<i style="background:#f07373;">减</i>在线支付满15减2，满30减3
+								<span class="warn">(手机客户端专享)</span>
+							</li>
+							<li>
+								<i style="background:#70bc46;">首</i>(不与其他活动同享)新用户下单立减5元
+								<span class="warn">(手机客户端专享)</span>
+							</li>
+							<li>
+								<i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>可使用支付宝、微信、手机QQ进行在线支付
+								<span></span>
+							</li>
+							<li>
+								<i style="background:#fff;color:#9071CB;border:1px solid;padding:0;">票</i>该商家支持开发票，开票订单金额100元起，请在下单时填写好发票抬头
+								<span></span>
+							</li>
+						</ul>
+						<ul class="detailpop-delivery">
+							<li>
+								<span class="color-stress plrtiny">100</span>
+								元起送
+							</li>
+							<li>免费配送</li>
+							<li>
+								平均
+								<span class="color-stress plrtiny">45</span>
+								分钟送达
+							</li>
+						</ul>
+						<div class="detailpop-notice"></div>
 					</div>
-				</a>
-				<div class="detailpop placeright" style="width: 295px; left: 295.5px; top: 1px;">
-					<div class="detailpop-arrow"></div>
-					<div class="detailpop-title">川娃子刘氏龙虾</div>
-					<div class="detailpop-flavors"></div>
-					<ul class="detailpop-activities">
-						<li>
-							<i style="background:#f07373;">减</i>在线支付满15减2，满30减3
-							<span class="warn">(手机客户端专享)</span>
-						</li>
-						<li>
-							<i style="background:#70bc46;">首</i>(不与其他活动同享)新用户下单立减5元
-							<span class="warn">(手机客户端专享)</span>
-						</li>
-						<li>
-							<i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>可使用支付宝、微信、手机QQ进行在线支付
-							<span></span>
-						</li>
-						<li>
-							<i style="background:#fff;color:#9071CB;border:1px solid;padding:0;">票</i>该商家支持开发票，开票订单金额100元起，请在下单时填写好发票抬头
-							<span></span>
-						</li>
-					</ul>
-					<ul class="detailpop-delivery">
-						<li>
-							<span class="color-stress plrtiny">100</span>
-							元起送
-						</li>
-						<li>免费配送</li>
-						<li>
-							平均
-							<span class="color-stress plrtiny">45</span>
-							分钟送达
-						</li>
-					</ul>
-					<div class="detailpop-notice"></div>
 				</div>
 			</div>
 		</div>
@@ -298,11 +332,11 @@
 							<p>饿了么网上订餐</p>
 						</div>
 					</div>
-					<a href="http://e.weibo.com/elemeorder" class="icon-weibo" target="_blank"></a>
-					<a href="http://page.renren.com/elemeorder" class="icon-renren" target="_blank"></a>
+					<a href="//e.weibo.com/elemeorder" class="icon-weibo" target="_blank"></a>
+					<a href="//page.renren.com/elemeorder" class="icon-renren" target="_blank"></a>
 				</div>
 			</div>
-			<div class="qrcode-block">
+			<div class="qrcode-block pull-right">
 				<img src="//static11.elemecdn.com/eleme/desktop/media/img/appqc.852963.png" alt="">
 				<div class="qrcode-text">
 					<b>下载手机版</b>

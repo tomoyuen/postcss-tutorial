@@ -41,13 +41,15 @@
 	padding: 0 1em;
 	font-size: 16px;
 	color: #fff;
-	box-sizing: border-box;
 }
 .nav-item:hover {
 	background-color: color($blue blackness(20%));
 }
 .nav-item.active {
 	background-color: color($blue blackness(28%));
+}
+.nav-item.cooperatioin {
+	display: none;
 }
 .nav-item .elemeicon-hot {
 	position: absolute;
@@ -56,6 +58,17 @@
 	width: 30px;
 	height: 20px;
 	background-position: 0 -226px;
+}
+@media(width >= 1260px) {
+	.nav-item {
+		width: 134px
+	}
+	.nav-item.cooperation {
+		display: inline-block
+	}
+	.nav-item .elemeicon-hot {
+		right: 10px
+	}
 }
 .nav-link {
 	position: relative;

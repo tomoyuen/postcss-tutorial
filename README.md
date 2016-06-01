@@ -3,7 +3,7 @@ postcss demo
 
 ### TODO
 - [ ] sticky effects
-- [ ] responsive structure
+- [x] responsive structure
 - [x] sidebar-tooltip
 - [ ] back-top
 

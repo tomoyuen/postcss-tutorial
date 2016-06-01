@@ -394,6 +394,11 @@ input {
 	width: 960px;
 	margin: 0 auto;
 }
+@media (width >= 1260px) {
+	.container {
+		width: 1180px
+	}
+}
 .clearfix:after {
 	content: "";
 	display: block;

@@ -19,7 +19,6 @@
 	line-height: 35px;
 	color: #ccc;
 	margin: 5px 0;
-	box-sizing: border-box;
 }
 .sidebar-btn:before {
 	font-size: 20px;
@@ -196,4 +195,15 @@
 	padding: 5px 10px;
 	background: #726F77;
 	border-radius: 3px;
+}
+@media (height <= 520px) {
+	.sidebar-btn {
+		display: none
+	}
+	.sidebar-btn-backtop {
+		display: block
+	}
+	.sidebar-cartbtn {
+		margin-top: 90px
+	}
 }

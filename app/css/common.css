@@ -1,9 +1,9 @@
 @font-face {
 	font-family:eleme;
-	src:url(//static11.elemecdn.com/eleme/desktop/media/font/eleme.432470.eot);
-	src:url(//static11.elemecdn.com/eleme/desktop/media/font/eleme.9e165a.woff) format('woff'),
-		url(//static11.elemecdn.com/eleme/desktop/media/font/eleme.0265d6.ttf) format('truetype'),
-		url(//static11.elemecdn.com/eleme/desktop/media/font/eleme.130bd5.svg#eleme) format('svg');
+	src:url(https://static11.elemecdn.com/eleme/desktop/media/font/eleme.432470.eot);
+	src:url(https://static11.elemecdn.com/eleme/desktop/media/font/eleme.9e165a.woff) format('woff'),
+		url(https://static11.elemecdn.com/eleme/desktop/media/font/eleme.0265d6.ttf) format('truetype'),
+		url(https://static11.elemecdn.com/eleme/desktop/media/font/eleme.130bd5.svg#eleme) format('svg');
 	font-weight:400;
 	font-style:normal;
 }
@@ -418,7 +418,7 @@ input {
 	-webkit-line-clamp: 2;
 }
 .elemeicon {
-	background: url(//static11.elemecdn.com/eleme/desktop/media/img/icon.d5d696.png) no-repeat;
+	background: url(https://static11.elemecdn.com/eleme/desktop/media/img/icon.d5d696.png) no-repeat;
 }
 .dropbox {
 	color: #999;
@@ -445,4 +445,19 @@ input {
 }
 .warn {
 	color: #f74342;
+}
+
+.carousel-inner > .carousel-item {
+	position: relative;
+	overflow: hidden;
+	display: none;
+	transition: transform .6s ease-in-out;
+	height: 80px;
+}
+.carousel-inner > .active {
+	display: block;
+}
+.carousel-inner > .carousel-item.active {
+	left: 0;
+	transform: translate3d(0,0,0);
 }

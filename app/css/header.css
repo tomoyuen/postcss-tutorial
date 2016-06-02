@@ -37,10 +37,12 @@
 	vertical-align: top;
 }
 .nav-item {
-	width: 6em;
 	padding: 0 1em;
 	font-size: 16px;
 	color: #fff;
+}
+.nav-item.homepage {
+	width: 7em;
 }
 .nav-item:hover {
 	background-color: color($blue blackness(20%));
@@ -48,7 +50,7 @@
 .nav-item.active {
 	background-color: color($blue blackness(28%));
 }
-.nav-item.cooperatioin {
+.nav-item.cooperation {
 	display: none;
 }
 .nav-item .elemeicon-hot {
@@ -61,13 +63,13 @@
 }
 @media(width >= 1260px) {
 	.nav-item {
-		width: 134px
+		padding: 0 2em;
 	}
 	.nav-item.cooperation {
-		display: inline-block
+		display: inline-block;
 	}
 	.nav-item .elemeicon-hot {
-		right: 10px
+		right: 10px;
 	}
 }
 .nav-link {

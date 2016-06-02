@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack && webpack-dev-server",
     "dev": "webpack-dev-server",
-    "build": "webpack --progress --colors --watch"
+    "build": "webpack --progress --colors"
   },
   "repository": {
     "type": "git",
@@ -43,7 +43,6 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
-    "jquery": "^2.2.4",
     "normalize-css": "^2.3.1"
   }
 }

@@ -20,3 +20,6 @@ postcss demo
 - 用webpack打包，写的js怎么暴露到全局?
 - 用html-minify压缩html代码，相邻的行内元素，多出了一个空格，设置collapseInlineTagWhitespace能清除空格，但是嵌套的标签里的空格也被清除了。
 - ie里的请求没有自动加http:或https:
+
+### tips
+- 使用了实验性质的animate()方法来实现购物车侧边栏的动画效果，只在新版的chrome里有效

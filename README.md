@@ -8,13 +8,11 @@ postcss demo
 - [x] back-top
 - [x] toggle显示backtop-btn
 - [ ] 兼容性测试
+- [ ] 轮播图
 
 ### optimize
 - click除sidebar-open以外的地方，都应该先触发closeSidebar()
 - 聚焦到的店铺，显示详情的应该根据对象屏幕的上下间距设置top或bottom，现在是写死的top
-
-### bugs
-- ~~sidebar-tooltip问题（想想还是写两个吧）~~
 
 ### questions
 - 用webpack打包，写的js怎么暴露到全局?

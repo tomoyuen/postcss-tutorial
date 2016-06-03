@@ -2,6 +2,8 @@ require('normalize-css');
 require('./index.css');
 
 window.onload = function () {
+	var hiddenTitle = '记得回来点单哦';
+
 	var categoryItems = document.querySelectorAll('.category li'),
 		subcategoryBlock = document.querySelector('.sub-category'),
 		subcategoryItems = document.querySelectorAll('.sub-category li'),
@@ -138,4 +140,41 @@ window.onload = function () {
 			scrollTop: [document.body.scrollTop, 0]
 		}, 2000);
 	});
+
+	function toggleTitle(title) {
+		var hidden,
+			state,
+			visibilityChange,
+			defaultTitle = document.title,
+			hiddenTitle = title;
+
+		// 兼容性处理
+		if (typeof document.hidden !== "undefined") {
+			hidden = "hidden";
+			visibilityChange = "visibilitychange";
+			state = "visibilityState";
+		} else if (typeof document.mozHidden !== "undefined") {
+			hidden = "mozHidden";
+			visibilityChange = "mozvisibilitychange";
+			state = "mozVisibilityState";
+		} else if (typeof document.msHidden !== "undefined") {
+			hidden = "msHidden";
+			visibilityChange = "msvisibilitychange";
+			state = "msVisibilityState";
+		} else if (typeof document.webkitHidden !== "undefined") {
+			hidden = "webkitHidden";
+			visibilityChange = "webkitvisibilitychange";
+			state = "webkitVisibilityState";
+		}
+
+		document.addEventListener(visibilityChange, function() {
+			if (document[state] === 'visible') {
+				document.title = defaultTitle
+			} else if (document[state] === 'hidden') {
+				document.title = hiddenTitle;
+			}
+		}, false);
+	};
+
+	toggleTitle(hiddenTitle);
 }

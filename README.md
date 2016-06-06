@@ -2,13 +2,13 @@
 postcss demo
 
 ### TODO
-- [ ] sticky effects
+- [x] sticky effects
 - [x] responsive structure
 - [x] sidebar-tooltip
 - [x] back-top
 - [x] toggle显示backtop-btn
 - [ ] 兼容性测试
-- [ ] 轮播图
+- [x] 轮播图
 
 ### optimize
 - click除sidebar-open以外的地方，都应该先触发closeSidebar()

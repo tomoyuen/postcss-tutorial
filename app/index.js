@@ -12,7 +12,16 @@ window.onload = function () {
 		cartBtn = document.querySelector('.sidebar .sidebar-cartbtn'),
 		sidebar = document.querySelector('.sidebar'),
 		detailPop = document.querySelector('.main-content .detailpop'),
-		backtopBtn = document.querySelector('.sidebar .sidebar-btn-backtop');
+		backtopBtn = document.querySelector('.sidebar .sidebar-btn-backtop'),
+		carouselHeight = document.querySelector('.carousel-wrapper').offsetHeight,
+		carouselInner = document.querySelector('.carousel-wrapper .carousel-inner'),
+		carouselItems = document.querySelectorAll('.carousel-inner .carousel-item'),
+		carouselPagers = document.querySelectorAll('.carousel-pager .pager-number'),
+		stickyEle = document.querySelector('.extra-filter'),
+		stickyVal = document.querySelector('.extra-filter').offsetTop,
+		timer1,
+		timer2,
+		index = 0;
 
 	var clearActive,
 		loopEvent,
@@ -135,11 +144,13 @@ window.onload = function () {
 	})
 
 	document.addEventListener('scroll', showBacktop);
-	backtopBtn.addEventListener('click', function() {
-		document.body.animate({
-			scrollTop: [document.body.scrollTop, 0]
-		}, 2000);
-	});
+	document.addEventListener('scroll', function() {
+		if (document.body.scrollTop >= stickyVal) {
+			stickyEle.classList.add('sticky');
+		} else {
+			stickyEle.classList.remove('sticky');
+		}
+	})
 
 	function toggleTitle(title) {
 		var hidden,
@@ -177,4 +188,56 @@ window.onload = function () {
 	};
 
 	toggleTitle(hiddenTitle);
+
+	// 轮播图效果
+	for (let i = 0; i < carouselPagers.length; i++) {
+		carouselPagers[i].index = i;
+		carouselPagers[i].addEventListener('click', function() {
+			showCarouselItem(this.index);
+		})
+	};
+	function showCarouselItem(i) {
+		var top = carouselInner.offsetTop;
+		index = i;
+		clearActive(carouselPagers);
+		carouselPagers[i].classList.add('active');
+		clearInterval(timer1);
+
+		if (top < -i * carouselHeight) {
+			timer1 = setInterval(function () {
+				top += 10;
+				if (top > -i * carouselHeight) {
+					top = -i * carouselHeight;
+				}
+				carouselInner.style.top = top + 'px';
+				if (top === i * carouselHeight) {
+					clearInterval(timer1)
+				}
+			}, 20)
+
+		} else if (top > -i * carouselHeight) {
+			timer1 = setInterval(function () {
+				top -= 10;
+				if (top < -i * carouselHeight) {
+					top = -i * carouselHeight;
+				}
+				carouselInner.style.top = top + 'px';
+				if (top === i * carouselHeight) {
+					clearInterval(timer1);
+				}
+			}, 20)
+		}
+	}
+
+	function autoPlay() {
+		timer2 = setInterval(function () {
+			index++;
+
+			if (index >= carouselItems.length) {
+				index = 0;
+			}
+			showCarouselItem(index);
+		}, 5000)
+	}
+	autoPlay();
 }

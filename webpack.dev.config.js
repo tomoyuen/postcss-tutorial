@@ -56,10 +56,10 @@ module.exports = {
 			loader: "file"
 		}]
 	},
-	postcss: function (webpack) {
+	postcss: function (bundler) {
 		return [
 			postcssImport({
-				addDependencyTo: webpack
+				addDependencyTo: bundler
 			}),
 			precss,
 			autoprefixer

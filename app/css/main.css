@@ -86,7 +86,7 @@
 	margin: 0 6px;
 }
 
-.search-form {
+.place-search {
 	margin: 10px 0;
 	height: 32px;
 	border: 1px solid #ccc;
@@ -94,18 +94,17 @@
 	position: relative;
 	z-index: 3;
 }
-.search-form input {
+.place-search input {
 	width: 236px;
 	margin: 4px 0;
 	border: none;
 	line-height: 24px;
 	transition: width .3s ease-in-out;
 }
-.search-form input:focus {
-	width: 306px;
+.place-search input:focus {
 	outline: none;
 }
-.search-form button {
+.place-search button {
 	appearance: none;
 	border: none;
 	color: #999;
@@ -113,7 +112,7 @@
 	background: none;
 	line-height: 24px;
 }
-.search-form button:hover {
+.place-search button:hover {
 	color: $linkcolor;
 }
 
@@ -193,6 +192,18 @@
 
 .extra-filter {
 	background-color: #f5f5f5;
+}
+.extra-filter .place-search {
+	display: none;
+	margin: 2px 0;
+}
+.extra-filter.sticky .place-search {
+	display: block;
+	float: right;
+	margin-right: 4px;
+}
+.extra-filter.sticky .place-search input {
+	width: 260px;
 }
 .extra-sort {
 	float: left;
@@ -534,6 +545,8 @@
 
 .activity-carousel {
 	margin-bottom: 10px;
+	height: 81px;
+	overflow: hidden;
 }
 .activity-carousel .carousel-item {
 	height: 81px;
@@ -542,5 +555,9 @@
 	.activity-carousel,
 	.activity-carousel .carousel-item {
 		height: 98px;
+	}
+
+	.extra-filter.sticky-block.sticky {
+		width: 1180px;
 	}
 }

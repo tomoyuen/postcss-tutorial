@@ -100,9 +100,9 @@
 	<div class="main">
 		<div class="container clearfix">
 			<div class="location-block clearfix">
-				<form class="search-form pull-right">
+				<form class="place-search pull-right">
 					<input type="text" placeholder="搜索商家，美食...">
-					<button type="submit"><i class="fa fa-search"></i></button>
+					<button type="submit"><i class="place-search-btn icon-search"></i></button>
 				</form>
 				<div class="location pull-left">
 					<label>当前位置：</label>
@@ -118,10 +118,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="activity-carousel">
-				<input type="radio" checked name="slider" id="l01">
-				<input type="radio" name="slider" id="l02">
-				<input type="radio" name="slider" id="l03">
+			<div class="activity-carousel carousel-wrapper">
 				<div class="carousel-inner" role="listbox">
 					<div class="carousel-item active">
 						<a href="#" target="_blank">
@@ -139,11 +136,11 @@
 						</a>
 					</div>
 				</div>
-				<div class="carousel-pager">
-					<label for="l01">1</label>
-					<label for="l02">2</label>
-					<label for="l03">3</label>
-				</div>
+				<ol class="carousel-pager">
+					<li class="pager-number number-1 active">1</li>
+					<li class="pager-number number-2">2</li>
+					<li class="pager-number number-3">3</li>
+				</ol>
 			</div>
 			<div class="container clearfix">
 				<div class="who-fetch-link pull-right">
@@ -172,7 +169,7 @@
 						<li>麻辣烫</li>
 					</ul>
 				</div>
-				<div class="extra-filter clearfix">
+				<div class="extra-filter clearfix sticky-block">
 					<div class="extra-sort">
 						<a class="extra-sort-item active" href="#">默认排序</a>
 						<a class="extra-sort-item" href="#">销量高</a>
@@ -194,6 +191,10 @@
 							</div>
 						</div>
 					</div>
+					<form class="place-search pull-right">
+						<input type="text" placeholder="搜索商家，美食...">
+						<button type="submit"><i class="place-search-btn icon-search"></i></button>
+					</form>
 					<div class="extra-option pull-right">
 						<label class="extra-option-item">
 							<input type="checkbox">新开商家

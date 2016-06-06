@@ -366,9 +366,10 @@ p {
 	margin: 0;
 	padding: 0
 }
-ul {
+ul, ol {
 	margin: 0;
 	padding: 0;
+	list-style: none;
 }
 li {
 	list-style: none;
@@ -447,20 +448,54 @@ input {
 	color: #f74342;
 }
 
-.carousel-inner > .carousel-item {
+.carousel-wrapper {
+	position: relative;
+}
+.carousel-wrapper .carousel-inner {
+	position: absolute;
+	top: 0;
+}
+.carousel-inner .carousel-item {
 	position: relative;
 	overflow: hidden;
-	display: none;
-	transition: transform .6s ease-in-out;
 	height: 80px;
-}
-.carousel-inner > .active {
-	display: block;
-}
-.carousel-inner > .carousel-item.active {
-	left: 0;
-	transform: translate3d(0,0,0);
 }
 .carousel-item img {
 	width: 100%;
+}
+.carousel-pager {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	margin: 0;
+}
+.carousel-pager .pager-number {
+	display: inline-block;
+	width: 15px;
+	background-color: #fff;
+	background-color: rgba(255,255,255,.5);
+	color: #999;
+	font-size: 12px;
+	padding: 0 1px;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	margin-right: 5px;
+}
+.carousel-pager .pager-number.active {
+	background-color: #f60;
+	background-color: rgba(255,102,0,.8);
+	color: #fff;
+	font-weight: 700;
+}
+
+.sticky-block.sticky {
+	position: fixed;
+	top: 0;
+	margin-left: -1px;
+	width: 960px;
+	border: 1px solid #e6e6e6;
+	margin-top: 0;
+	box-shadow: 0 3px 3px -3px rgba(0,0,0,.2);
+	z-index: 5;
 }

@@ -1,5 +1,4 @@
-var Webpack = require('webpack'),
-	path = require('path'),
+var path = require('path'),
 	precss = require('precss'),
 	autoprefixer = require('autoprefixer'),
 	postcssImport = require('postcss-import'),
@@ -12,10 +11,10 @@ var ROOT_PATH = path.resolve(__dirname),
 	PROD_PATH = path.resolve(ROOT_PATH, 'dist');
 
 module.exports = {
-	entry: ['webpack/hot/dev-server', APP_PATH],
+	entry: [APP_PATH],
 	output: {
 		path: PROD_PATH,
-		filename: '[name].bundle.js'
+		filename: 'bundle.js'
 	},
 	plugins: [
 		new HtmlwebpackPlugin({
@@ -31,12 +30,12 @@ module.exports = {
 				removeStyleLinkTypeAttributes: true
 			}
 		}),
-		new ExtractTextPlugin("style.[hash:8].css");
+		new ExtractTextPlugin('css/style.[hash:8].css')
 	],
 	module: {
 		loaders: [{
 			test: /\.css$/,
-			loader: ExtractTextPlugin.extract('style','css?importLoaders=1&sourceMap','postcss'),
+			loader: ExtractTextPlugin.extract('style','css?module&localIdentName=[local]&importLoaders=1!postcss'),
 			include: APP_PATH
 		},{
 			test: /\.(png|jpg|jpeg|gif)$/,
@@ -58,22 +57,14 @@ module.exports = {
 			loader: "file"
 		}]
 	},
-	postcss: function (webpack) {
+	postcss: function (bundler) {
 		return [
 			postcssImport({
-				addDependencyTo: webpack
+				addDependencyTo: bundler
 			}),
 			precss,
 			autoprefixer
 		]
-	},
-	devServer: {
-		contentBase: './build',
-		historyApiFallback: false,
-		hot: false,
-		inline: true,
-		progress: true,
-		port: 3000
 	},
 	devtool: 'eval-source-map'
 }

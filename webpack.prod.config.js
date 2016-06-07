@@ -2,6 +2,8 @@ var path = require('path'),
 	precss = require('precss'),
 	autoprefixer = require('autoprefixer'),
 	postcssImport = require('postcss-import'),
+	postcssFix = require('postcss-fixes'),
+	rgbaFallback = require('postcss-color-rgba-fallback'),
 	HtmlwebpackPlugin = require('html-webpack-plugin'),
 	ExtractTextPlugin = require('extract-text-webpack-plugin');
 
@@ -63,6 +65,8 @@ module.exports = {
 				addDependencyTo: bundler
 			}),
 			precss,
+			rgbaFallback,
+			postcssFix,
 			autoprefixer
 		]
 	},

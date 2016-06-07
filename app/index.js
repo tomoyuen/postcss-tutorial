@@ -197,7 +197,10 @@ window.onload = function () {
 		})
 	};
 	function showCarouselItem(i) {
-		var top = carouselInner.offsetTop;
+		var top = carouselInner.offsetTop,
+			step = Math.abs(i * carouselHeight + top)/10;
+
+		console.log(step);
 		index = i;
 		clearActive(carouselPagers);
 		carouselPagers[i].classList.add('active');
@@ -205,7 +208,7 @@ window.onload = function () {
 
 		if (top < -i * carouselHeight) {
 			timer1 = setInterval(function () {
-				top += 10;
+				top += step;
 				if (top > -i * carouselHeight) {
 					top = -i * carouselHeight;
 				}
@@ -217,7 +220,7 @@ window.onload = function () {
 
 		} else if (top > -i * carouselHeight) {
 			timer1 = setInterval(function () {
-				top -= 10;
+				top -= step;
 				if (top < -i * carouselHeight) {
 					top = -i * carouselHeight;
 				}
@@ -237,7 +240,7 @@ window.onload = function () {
 				index = 0;
 			}
 			showCarouselItem(index);
-		}, 5000)
+		}, 4000)
 	}
 	autoPlay();
 }

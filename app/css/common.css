@@ -362,6 +362,9 @@ a {
 a:focus {
 	outline: none;
 }
+a img {
+	border: 0px;
+}
 p {
 	margin: 0;
 	padding: 0
@@ -375,8 +378,9 @@ li {
 	list-style: none;
 }
 body {
-	background-color: $bgcolor;
+	margin: 0;
 	color: #333;
+	background-color: $bgcolor;
 	font: 400 14px/1.5 PingFang SC,Lantinghei SC,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
 }
 h1,h2,h3 {

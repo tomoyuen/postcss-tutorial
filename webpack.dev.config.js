@@ -3,6 +3,8 @@ var Webpack = require('webpack'),
 	precss = require('precss'),
 	autoprefixer = require('autoprefixer'),
 	postcssImport = require('postcss-import'),
+	postcssFix = require('postcss-fixes'),
+	rgbaFallback = require('postcss-color-rgba-fallback'),
 	HtmlwebpackPlugin = require('html-webpack-plugin');
 
 var ROOT_PATH = path.resolve(__dirname),
@@ -62,6 +64,8 @@ module.exports = {
 				addDependencyTo: bundler
 			}),
 			precss,
+			rgbaFallback,
+			postcssFix,
 			autoprefixer
 		]
 	},

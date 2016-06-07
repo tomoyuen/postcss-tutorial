@@ -7,7 +7,7 @@ postcss demo
 - [x] sidebar-tooltip
 - [x] back-top
 - [x] toggle显示backtop-btn
-- [ ] 兼容性测试
+- [x] 兼容性测试
 - [x] 轮播图
 
 ### optimize
@@ -21,3 +21,4 @@ postcss demo
 
 ### tips
 - 使用了实验性质的animate()方法来实现购物车侧边栏的动画效果，只在新版的chrome里有效
+- 渣兼容，写的js好多属性ie都不支持 囧rz

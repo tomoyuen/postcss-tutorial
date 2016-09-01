@@ -36,7 +36,7 @@ module.exports = {
 	module: {
 		loaders: [{
 			test: /\.css$/,
-			loader: 'style!css?importLoaders=1&localIdentName=[local]!postcss',
+			loader: 'style!css?importLoaders=1!postcss',
 			include: APP_PATH
 		},{
 			test: /\.(png|jpg|jpeg|gif)$/,

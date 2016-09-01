@@ -37,7 +37,7 @@ module.exports = {
 	module: {
 		loaders: [{
 			test: /\.css$/,
-			loader: ExtractTextPlugin.extract('style','css?module&localIdentName=[local]&importLoaders=1!postcss'),
+			loader: ExtractTextPlugin.extract('style','css?importLoaders=1!postcss'),
 			include: APP_PATH
 		},{
 			test: /\.(png|jpg|jpeg|gif)$/,

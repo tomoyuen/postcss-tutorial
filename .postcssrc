@@ -1,0 +1,10 @@
+{
+	"modules": false,
+	"plugins": {
+		"postcss-import",
+		"precss",
+		"postcss-color-rgba-fallback",
+		"postcss-fixes",
+		"autoprefixer"
+	},
+}

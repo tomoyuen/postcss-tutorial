@@ -34,9 +34,18 @@ module.exports = {
 		new Webpack.HotModuleReplacementPlugin()
 	],
 	module: {
-		loaders: [{
+		rules: [{
 			test: /\.css$/,
-			loader: 'style!css?importLoaders=1!postcss',
+			loaders: [
+				'style-loader',
+				{
+					loader: 'css-loader',
+					options: {
+						importLoaders: 1,
+					}
+				},
+				'postcss-loader'
+			],
 			include: APP_PATH
 		},{
 			test: /\.(png|jpg|jpeg|gif)$/,
@@ -44,30 +53,15 @@ module.exports = {
 		},{
 			test: /\.js$/,
 			exclude: /node_modules/,
-			loader: 'babel',
-			query: {
-				presets: ['es2015'],
-				plugins: ['transform-runtime']
-			}
+			loader: 'babel-loader'
 		},{
 			test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-			loader: "url?limit=10000&minetype=application/font-woff"
+			loader: "url-loader?limit=10000&minetype=application/font-woff"
 		},
 		{
 			test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-			loader: "file"
+			loader: "file-loader"
 		}]
-	},
-	postcss: function (bundler) {
-		return [
-			postcssImport({
-				addDependencyTo: bundler
-			}),
-			precss,
-			rgbaFallback,
-			postcssFix,
-			autoprefixer
-		]
 	},
 	devServer: {
 		contentBase: './build',

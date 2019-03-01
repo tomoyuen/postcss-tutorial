@@ -1,505 +1,505 @@
 @font-face {
-	font-family:eleme;
-	src:url(https://static11.elemecdn.com/eleme/desktop/media/font/eleme.432470.eot);
-	src:url(https://static11.elemecdn.com/eleme/desktop/media/font/eleme.9e165a.woff) format('woff'),
-		url(https://static11.elemecdn.com/eleme/desktop/media/font/eleme.0265d6.ttf) format('truetype'),
-		url(https://static11.elemecdn.com/eleme/desktop/media/font/eleme.130bd5.svg#eleme) format('svg');
-	font-weight:400;
-	font-style:normal;
+  font-family:eleme;
+  src:url(https://static11.elemecdn.com/eleme/desktop/media/font/eleme.432470.eot);
+  src:url(https://static11.elemecdn.com/eleme/desktop/media/font/eleme.9e165a.woff) format('woff'),
+    url(https://static11.elemecdn.com/eleme/desktop/media/font/eleme.0265d6.ttf) format('truetype'),
+    url(https://static11.elemecdn.com/eleme/desktop/media/font/eleme.130bd5.svg#eleme) format('svg');
+  font-weight:400;
+  font-style:normal;
 }
 [class*=" icon-"],[class^=icon-] {
-	font-family: eleme;
-	speak: none;
-	font-style: normal;
-	font-weight: 400;
-	-webkit-font-feature-settings: normal;
-	font-feature-settings: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale
+  font-family: eleme;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  -webkit-font-feature-settings: normal;
+  font-feature-settings: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
 }
 .icon-email:before {
-	content: "\e900"
+  content: "\e900"
 }
 .icon-android:before {
-	content: "\e901"
+  content: "\e901"
 }
 .icon-angle-double-right:before {
-	content: "\e902"
+  content: "\e902"
 }
 .icon-apple:before {
-	content: "\e903"
+  content: "\e903"
 }
 .icon-arrow-down:before {
-	content: "\e904"
+  content: "\e904"
 }
 .icon-arrow-right:before {
-	content: "\e905"
+  content: "\e905"
 }
 .icon-arrow-up:before {
-	content: "\e906"
+  content: "\e906"
 }
 .icon-cart-add:before {
-	content: "\e907"
+  content: "\e907"
 }
 .icon-cart:before {
-	content: "\e908"
+  content: "\e908"
 }
 .icon-chat-message:before {
-	content: "\e909"
+  content: "\e909"
 }
 .icon-chat:before {
-	content: "\e90a"
+  content: "\e90a"
 }
 .icon-check:before {
-	content: "\e90b"
+  content: "\e90b"
 }
 .icon-circle-check:before {
-	content: "\e90c"
+  content: "\e90c"
 }
 .icon-circle-help:before {
-	content: "\e90d"
+  content: "\e90d"
 }
 .icon-circle:before {
-	content: "\e90e"
+  content: "\e90e"
 }
 .icon-close:before {
-	content: "\e90f"
+  content: "\e90f"
 }
 .icon-crown:before {
-	content: "\e910"
+  content: "\e910"
 }
 .icon-dot-check:before {
-	content: "\e911"
+  content: "\e911"
 }
 .icon-dot-error:before {
-	content: "\e912"
+  content: "\e912"
 }
 .icon-dot-help:before {
-	content: "\e913"
+  content: "\e913"
 }
 .icon-dot-warning:before {
-	content: "\e914"
+  content: "\e914"
 }
 .icon-dot-wraning:before {
-	content: "\e915"
+  content: "\e915"
 }
 .icon-dot:before {
-	content: "\e916"
+  content: "\e916"
 }
 .icon-email2:before {
-	content: "\e917"
+  content: "\e917"
 }
 .icon-favor:before {
-	content: "\e918"
+  content: "\e918"
 }
 .icon-favorite:before {
-	content: "\e919"
+  content: "\e919"
 }
 .icon-feedback:before {
-	content: "\e91a"
+  content: "\e91a"
 }
 .icon-figure:before {
-	content: "\e91b"
+  content: "\e91b"
 }
 .icon-file-text:before {
-	content: "\e91c"
+  content: "\e91c"
 }
 .icon-gift:before {
-	content: "\e91d"
+  content: "\e91d"
 }
 .icon-grid:before {
-	content: "\e91e"
+  content: "\e91e"
 }
 .icon-help:before {
-	content: "\e91f"
+  content: "\e91f"
 }
 .icon-history:before {
-	content: "\e920"
+  content: "\e920"
 }
 .icon-line-home:before {
-	content: "\e921"
+  content: "\e921"
 }
 .icon-line-message:before {
-	content: "\e922"
+  content: "\e922"
 }
 .icon-line-order:before {
-	content: "\e923"
+  content: "\e923"
 }
 .icon-line-profile:before {
-	content: "\e924"
+  content: "\e924"
 }
 .icon-list:before {
-	content: "\e925"
+  content: "\e925"
 }
 .icon-location-line:before {
-	content: "\e926"
+  content: "\e926"
 }
 .icon-location-line2:before {
-	content: "\e927"
+  content: "\e927"
 }
 .icon-location:before {
-	content: "\e928"
+  content: "\e928"
 }
 .icon-lock-24:before {
-	content: "\e929"
+  content: "\e929"
 }
 .icon-logo-map:before {
-	content: "\e92a"
+  content: "\e92a"
 }
 .icon-logo-text:before {
-	content: "\e92b"
+  content: "\e92b"
 }
 .icon-logo:before {
-	content: "\e92c"
+  content: "\e92c"
 }
 .icon-logout:before {
-	content: "\e92d"
+  content: "\e92d"
 }
 .icon-mobile:before {
-	content: "\e92e"
+  content: "\e92e"
 }
 .icon-notice:before {
-	content: "\e92f"
+  content: "\e92f"
 }
 .icon-order-arrive:before {
-	content: "\e930"
+  content: "\e930"
 }
 .icon-order-arrivedone:before {
-	content: "\e931"
+  content: "\e931"
 }
 .icon-order-complaint:before {
-	content: "\e932"
+  content: "\e932"
 }
 .icon-order-confirm:before {
-	content: "\e933"
+  content: "\e933"
 }
 .icon-order-confirmdone:before {
-	content: "\e934"
+  content: "\e934"
 }
 .icon-order-distribution:before {
-	content: "\e935"
+  content: "\e935"
 }
 .icon-order-distributiondone:before {
-	content: "\e936"
+  content: "\e936"
 }
 .icon-order-favor:before {
-	content: "\e937"
+  content: "\e937"
 }
 .icon-order-pay:before {
-	content: "\e938"
+  content: "\e938"
 }
 .icon-order-paydone:before {
-	content: "\e939"
+  content: "\e939"
 }
 .icon-order-submit:before {
-	content: "\e93a"
+  content: "\e93a"
 }
 .icon-order-submitdone:before {
-	content: "\e93b"
+  content: "\e93b"
 }
 .icon-order:before {
-	content: "\e93c"
+  content: "\e93c"
 }
 .icon-phone:before {
-	content: "\e93d"
+  content: "\e93d"
 }
 .icon-plus:before {
-	content: "\e93e"
+  content: "\e93e"
 }
 .icon-preference:before {
-	content: "\e93f"
+  content: "\e93f"
 }
 .icon-primitive-dot:before {
-	content: "\e940"
+  content: "\e940"
 }
 .icon-profile-email:before {
-	content: "\e941"
+  content: "\e941"
 }
 .icon-profile-left-arrow:before {
-	content: "\e942"
+  content: "\e942"
 }
 .icon-profile-phone:before {
-	content: "\e943"
+  content: "\e943"
 }
 .icon-profile-right-arrow:before {
-	content: "\e944"
+  content: "\e944"
 }
 .icon-profile:before {
-	content: "\e945"
+  content: "\e945"
 }
 .icon-QR-code:before {
-	content: "\e946"
+  content: "\e946"
 }
 .icon-qrcode:before {
-	content: "\e947"
+  content: "\e947"
 }
 .icon-renren:before {
-	content: "\e948"
+  content: "\e948"
 }
 .icon-search:before {
-	content: "\e949"
+  content: "\e949"
 }
 .icon-service:before {
-	content: "\e94a"
+  content: "\e94a"
 }
 .icon-setting:before {
-	content: "\e94b"
+  content: "\e94b"
 }
 .icon-star-bad:before {
-	content: "\e94c"
+  content: "\e94c"
 }
 .icon-star-good:before {
-	content: "\e94d"
+  content: "\e94d"
 }
 .icon-star-nofeel:before {
-	content: "\e94e"
+  content: "\e94e"
 }
 .icon-star-rate:before {
-	content: "\e94f"
+  content: "\e94f"
 }
 .icon-star:before {
-	content: "\e950"
+  content: "\e950"
 }
 .icon-top:before {
-	content: "\e951"
+  content: "\e951"
 }
 .icon-trash:before {
-	content: "\e952"
+  content: "\e952"
 }
 .icon-unfavorite:before {
-	content: "\e953"
+  content: "\e953"
 }
 .icon-uniE01D:before {
-	content: "\e954"
+  content: "\e954"
 }
 .icon-uniE01E:before {
-	content: "\e955"
+  content: "\e955"
 }
 .icon-uniE02C:before {
-	content: "\e956"
+  content: "\e956"
 }
 .icon-uniE02D:before {
-	content: "\e957"
+  content: "\e957"
 }
 .icon-uniE02E:before {
-	content: "\e958"
+  content: "\e958"
 }
 .icon-uniE003:before {
-	content: "\e959"
+  content: "\e959"
 }
 .icon-uniE03A:before {
-	content: "\e95a"
+  content: "\e95a"
 }
 .icon-uniE03C:before {
-	content: "\e95b"
+  content: "\e95b"
 }
 .icon-uniE03D:before {
-	content: "\e95c"
+  content: "\e95c"
 }
 .icon-uniE03F:before {
-	content: "\e95d"
+  content: "\e95d"
 }
 .icon-uniE024:before {
-	content: "\e95e"
+  content: "\e95e"
 }
 .icon-uniE025:before {
-	content: "\e95f"
+  content: "\e95f"
 }
 .icon-uniE029:before {
-	content: "\e960"
+  content: "\e960"
 }
 .icon-uniE037:before {
-	content: "\e961"
+  content: "\e961"
 }
 .icon-uniE039:before {
-	content: "\e962"
+  content: "\e962"
 }
 .icon-uniE65D:before {
-	content: "\e963"
+  content: "\e963"
 }
 .icon-uniE65E:before {
-	content: "\e964"
+  content: "\e964"
 }
 .icon-uniE600:before {
-	content: "\e965"
+  content: "\e965"
 }
 .icon-uniE664:before {
-	content: "\e966"
+  content: "\e966"
 }
 .icon-uniE668:before {
-	content: "\e967"
+  content: "\e967"
 }
 .icon-user:before {
-	content: "\e968"
+  content: "\e968"
 }
 .icon-visit-history:before {
-	content: "\e969"
+  content: "\e969"
 }
 .icon-wechat:before {
-	content: "\e96a"
+  content: "\e96a"
 }
 .icon-weibo:before {
-	content: "\e96b"
+  content: "\e96b"
 }
 .icon-wrench:before {
-	content: "\e96c"
+  content: "\e96c"
 }
 .icon-yen:before {
-	content: "\e96d"
+  content: "\e96d"
 }
 
 *, :after, :before {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 a {
-	color: #333;
-	text-decoration: none;
-	outline: none;
+  color: #333;
+  text-decoration: none;
+  outline: none;
 }
 a:focus {
-	outline: none;
+  outline: none;
 }
 a img {
-	border: 0px;
+  border: 0px;
 }
 p {
-	margin: 0;
-	padding: 0
+  margin: 0;
+  padding: 0
 }
 ul, ol {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 li {
-	list-style: none;
+  list-style: none;
 }
 body {
-	margin: 0;
-	color: #333;
-	background-color: $bgcolor;
-	font: 400 14px/1.5 PingFang SC,Lantinghei SC,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
+  margin: 0;
+  color: #333;
+  background-color: $bgcolor;
+  font: 400 14px/1.5 PingFang SC,Lantinghei SC,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
 }
 h1,h2,h3 {
-	margin: 0;
+  margin: 0;
 }
 input {
-	padding: 0 8px;
+  padding: 0 8px;
 }
 .pull-right {
-	float: right;
+  float: right;
 }
 .pull-left {
-	float: left;
+  float: left;
 }
 .container {
-	width: 960px;
-	margin: 0 auto;
+  width: 960px;
+  margin: 0 auto;
 }
 @media (width >= 1260px) {
-	.container {
-		width: 1180px
-	}
+  .container {
+    width: 1180px
+  }
 }
 .clearfix:after {
-	content: "";
-	display: block;
-	height: 0;
-	clear: both;
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
 }
 .nowrap {
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .multi-nowrap {
-	display: -webkit-box;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	box-orient: vertical;
-	-webkit-line-clamp: 2;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 .elemeicon {
-	background: url(https://static11.elemecdn.com/eleme/desktop/media/img/icon.d5d696.png) no-repeat;
+  background: url(https://static11.elemecdn.com/eleme/desktop/media/img/icon.d5d696.png) no-repeat;
 }
 .dropbox {
-	color: #999;
-	position: absolute;
-	background: #fff;
-	background: rgba(255,255,255,.98);
-	padding: 4px 6px;
-	box-shadow: 0 1px 2px rgba(0,0,0,.5);
-	border: 1px solid #ddd\9;
-	border-width: 0 1px 1px\9;
-	z-index: 6;
+  color: #999;
+  position: absolute;
+  background: #fff;
+  background: rgba(255,255,255,.98);
+  padding: 4px 6px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.5);
+  border: 1px solid #ddd\9;
+  border-width: 0 1px 1px\9;
+  z-index: 6;
 }
 .dropbox:before {
-	content: ' ';
-	position: absolute;
-	display: block;
-	top: -10px;
-	border: 5px solid;
+  content: ' ';
+  position: absolute;
+  display: block;
+  top: -10px;
+  border: 5px solid;
 }
 .divider {
-	margin: 0;
-	border: #eee solid;
-	border-width: 1px 0 0;
+  margin: 0;
+  border: #eee solid;
+  border-width: 1px 0 0;
 }
 .warn {
-	color: #f74342;
+  color: #f74342;
 }
 
 .carousel-wrapper {
-	position: relative;
+  position: relative;
 }
 .carousel-wrapper .carousel-inner {
-	position: absolute;
-	top: 0;
+  position: absolute;
+  top: 0;
 }
 .carousel-inner .carousel-item {
-	position: relative;
-	overflow: hidden;
-	height: 80px;
+  position: relative;
+  overflow: hidden;
+  height: 80px;
 }
 .carousel-item img {
-	width: 100%;
+  width: 100%;
 }
 .carousel-pager {
-	position: absolute;
-	bottom: 5px;
-	right: 5px;
-	margin: 0;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  margin: 0;
 }
 .carousel-pager .pager-number {
-	display: inline-block;
-	width: 15px;
-	background-color: #fff;
-	background-color: rgba(255,255,255,.5);
-	color: #999;
-	font-size: 12px;
-	padding: 0 1px;
-	text-align: center;
-	vertical-align: middle;
-	cursor: pointer;
-	margin-right: 5px;
+  display: inline-block;
+  width: 15px;
+  background-color: #fff;
+  background-color: rgba(255,255,255,.5);
+  color: #999;
+  font-size: 12px;
+  padding: 0 1px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
 }
 .carousel-pager .pager-number.active {
-	background-color: #f60;
-	background-color: rgba(255,102,0,.8);
-	color: #fff;
-	font-weight: 700;
+  background-color: #f60;
+  background-color: rgba(255,102,0,.8);
+  color: #fff;
+  font-weight: 700;
 }
 
 .sticky-block.sticky {
-	position: fixed;
-	top: 0;
-	margin-left: -1px;
-	width: 960px;
-	border: 1px solid #e6e6e6;
-	margin-top: 0;
-	box-shadow: 0 3px 3px -3px rgba(0,0,0,.2);
-	z-index: 5;
+  position: fixed;
+  top: 0;
+  margin-left: -1px;
+  width: 960px;
+  border: 1px solid #e6e6e6;
+  margin-top: 0;
+  box-shadow: 0 3px 3px -3px rgba(0,0,0,.2);
+  z-index: 5;
 }

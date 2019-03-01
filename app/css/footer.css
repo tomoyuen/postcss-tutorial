@@ -1,117 +1,117 @@
 .footer {
-	margin-top: 50px;
-	border-top: 1px solid #eee;
+  margin-top: 50px;
+  border-top: 1px solid #eee;
 }
 .footer .container {
-	padding: 30px 0 10px;
+  padding: 30px 0 10px;
 }
 
 .link-block {
-	float: left;
-	width: 15%;
-	line-height: 2;
+  float: left;
+  width: 15%;
+  line-height: 2;
 }
 .link-block ul {
-	padding: 0;
+  padding: 0;
 }
 .link-block a {
-	color: #999;
-	font-size: 12px;
+  color: #999;
+  font-size: 12px;
 }
 
 .contact-block {
-	float: left;
-	width: 23%;
-	padding-left: 3%;
-	padding-right: 10px;
-	color: #666;
-	border-left: 1px solid #e6e6e6;
+  float: left;
+  width: 23%;
+  padding-left: 3%;
+  padding-right: 10px;
+  color: #666;
+  border-left: 1px solid #e6e6e6;
 }
 .contact-block .contact-item {
-	margin-bottom: 12px;
-	color: #666;
-	font-size: 14px;
+  margin-bottom: 12px;
+  color: #666;
+  font-size: 14px;
 }
 .contact-item label {
-	display: inline-block;
+  display: inline-block;
 }
 .contact-item .icon-wechat {
-	margin-left: 5px;
+  margin-left: 5px;
 }
 .contact-item .icon-wechat .dropbox {
-	display: none;
+  display: none;
 }
 .footer-contact-dropbox {
-	bottom: 30px;
-	left: -60px;
-	text-align: center;
+  bottom: 30px;
+  left: -60px;
+  text-align: center;
 }
 .dropbox.dropbox-bottom:before {
-	top: auto;
-	bottom: -10px;
-	left: 65px;
-	border-color: #fff transparent transparent;
-	z-index: 2;
+  top: auto;
+  bottom: -10px;
+  left: 65px;
+  border-color: #fff transparent transparent;
+  z-index: 2;
 }
 .footer-contact-dropbox img {
-	width: 130px;
-	height: 130px;
+  width: 130px;
+  height: 130px;
 }
 .contact-item [class^=icon-] {
-	cursor: pointer;
-	position: relative;
-	margin-left: 10px;
-	display: inline-block;
+  cursor: pointer;
+  position: relative;
+  margin-left: 10px;
+  display: inline-block;
 }
 .contact-item [class^=icon-]:before {
-	font-size: 24px;
-	color: #ccc;
-	vertical-align: middle;
+  font-size: 24px;
+  color: #ccc;
+  vertical-align: middle;
 }
 .contact-item .icon-wechat:hover .dropbox {
-	display: block;
+  display: block;
 }
 .contact-item .icon-wechat:hover:before {
-	color: #77d175;
+  color: #77d175;
 }
 .contact-item .icon-weibo:hover:before {
-	color: #fb545f;
+  color: #fb545f;
 }
 .contact-item .icon-renren:hover:before {
-	color: #47a9f7;
+  color: #47a9f7;
 }
 
 .qrcode-block {
-	display: inline-block;
-	width: 265px;
+  display: inline-block;
+  width: 265px;
 }
 .qrcode-block img {
-	display: inline-block;
-	width: 90px;
-	height: 90px;
-	margin-right: 20px;
-	vertical-align: middle;
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  margin-right: 20px;
+  vertical-align: middle;
 }
 .qrcode-text {
-	display: inline-block;
-	vertical-align: middle;
+  display: inline-block;
+  vertical-align: middle;
 }
 .qrcode-block p {
-	font-size: 12px;
+  font-size: 12px;
 }
 
 .copyright {
-	padding-top: 60px;
-	color: #999;
-	font-size: 12px;
-	font-family: Palatino,Optima,Georgia,serif;
-	text-align: center;
-	clear: both;
+  padding-top: 60px;
+  color: #999;
+  font-size: 12px;
+  font-family: Palatino,Optima,Georgia,serif;
+  text-align: center;
+  clear: both;
 }
 .copyright a {
-	color: inherit;
+  color: inherit;
 }
 .copyright a:hover {
-	color: #333;
-	text-decoration: underline;
+  color: #333;
+  text-decoration: underline;
 }

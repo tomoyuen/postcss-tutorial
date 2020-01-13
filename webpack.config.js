@@ -1,7 +1,7 @@
 const webpack = require('webpack'),
   path = require('path'),
   HtmlwebpackPlugin = require('html-webpack-plugin'),
-  ExtractCssChunks = require('extract-css-chunks-webpack-plugin'),
+  MiniCssExtractPlugin = require('mini-css-extract-plugin'),
   CleanWebpackPlugin = require('clean-webpack-plugin');
 
 function resolve(url) {
@@ -22,7 +22,7 @@ module.exports = {
       {
         test: /\.css$/,
         loaders: [
-          devMode ? 'style-loader' : ExtractCssChunks.loader,
+          devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
@@ -71,6 +71,7 @@ module.exports = {
   devtool: devMode ? 'source-map' : false,
   target: 'web',
   plugins: [
+    new MiniCssExtractPlugin(),
     new HtmlwebpackPlugin({
       title: 'Hello world',
       template: resolve('app/index.html'),

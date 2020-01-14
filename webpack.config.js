@@ -2,6 +2,7 @@ const webpack = require('webpack'),
   path = require('path'),
   HtmlwebpackPlugin = require('html-webpack-plugin'),
   MiniCssExtractPlugin = require('mini-css-extract-plugin'),
+  OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin'),
   CleanWebpackPlugin = require('clean-webpack-plugin');
 
 function resolve(url) {
@@ -27,9 +28,15 @@ module.exports = {
             loader: 'css-loader',
             options: {
               importLoaders: 1,
+              sourceMap: devMode,
             }
           },
-          'postcss-loader'
+          {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: devMode,
+            }
+          }
         ],
         exclude: /node_modules/
       },
@@ -71,7 +78,17 @@ module.exports = {
   devtool: devMode ? 'source-map' : false,
   target: 'web',
   plugins: [
-    new MiniCssExtractPlugin(),
+    !devMode && new MiniCssExtractPlugin({filename: '[name].[hash:7].css'}),
+    !devMode && new OptimizeCSSAssetsPlugin({
+      cssProcessorPluginOptions: {
+        preset: ['default', {
+          svgo: false,
+          discardComments: {
+            removeAll: true,
+          },
+        }],
+      },
+    }),
     new HtmlwebpackPlugin({
       title: 'Hello world',
       template: resolve('app/index.html'),
@@ -85,9 +102,6 @@ module.exports = {
       }
     }),
     devMode && new webpack.HotModuleReplacementPlugin(),
-    !devMode && new ExtractCssChunks({
-      filename: devMode ? '[name].css' : '[name].[contenthash:7].css',
-    }),
-    !devMode && new CleanWebpackPlugin(['dist'])
+    !devMode && new CleanWebpackPlugin()
   ].filter(Boolean)
 }
